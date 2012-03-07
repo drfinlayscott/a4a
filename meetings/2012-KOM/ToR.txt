@@ -1,0 +1,15 @@
+ToR for the first meeting of the Initiative 'Assessment for all (A4A)'
+29/02-02/03 2012 JRC, Ispra, Italy
+
+The implementation of the 2009 revision of the DCF generated the obligation to collect a large amount of information for all stock being subject to fisheries exploitation. Most of these stocks will have in the future, ~2020, time series of exploitation data more then 10 years long, although the information about the biology will most likely be limited, due to the high requirements of man power and logistics to process all the samples collected. These stocks may not fit directly into the "data poor" stock definition, neither will they have enought information to run sophisticated modelling methodologies. As scientists it is important think ahead and start developing methods to deal with such a large number of stocks. 
+
+Having in mind the above description, a meeting to explore solutions and identify pathways for progress on this issues will be held in JRC, Ispra, Italy, from the 29th of February to the to the 02nd of March 2012, conveening a number of scientists involved in stocks assessment and fisheries management advise.
+
+The meeting will discuss and identify, for stocks with moderate time series (>10 years, <20 years) of exploitation data:
+- world wide needs of fisheries advice,
+- available stock assessment methods,
+- ways to make stock assessment in the context of management advise more robust,
+- identify modules to build a MSE,
+- discuss progress of the initiative. 
+ 
+
