@@ -305,27 +305,35 @@
 <node CREATED="1330607442394" ID="ID_143329878" MODIFIED="1330607446203" TEXT="Massive data"/>
 <node CREATED="1330607465944" ID="ID_1982668966" MODIFIED="1330607480124" TEXT="Model to be applied rapidly to a wide range of situations"/>
 </node>
-<node CREATED="1330525260869" FOLDED="true" ID="ID_657362335" MODIFIED="1331150184372" POSITION="right" TEXT="Moderate data stock">
+<node CREATED="1330525260869" ID="ID_657362335" MODIFIED="1331282492163" POSITION="right" TEXT="Moderate data stock">
 <icon BUILTIN="idea"/>
 <icon BUILTIN="full-1"/>
-<node CREATED="1330525292389" FOLDED="true" ID="ID_1334341458" MODIFIED="1331133102381" TEXT="Exploitation">
+<node CREATED="1330525292389" ID="ID_1334341458" MODIFIED="1331280979805" TEXT="Exploitation">
 <icon BUILTIN="full-1"/>
 <node CREATED="1330525432277" ID="ID_410633046" MODIFIED="1330528645470" TEXT="Nominal effort"/>
-<node CREATED="1330525296759" FOLDED="true" ID="ID_848182743" MODIFIED="1331133102381" TEXT="Volume">
-<node CREATED="1330528122872" ID="ID_1944869665" MODIFIED="1330528130547" TEXT="D+L"/>
-<node CREATED="1330528131907" ID="ID_1789872811" MODIFIED="1330528133293" TEXT="L"/>
+<node CREATED="1330525296759" ID="ID_848182743" MODIFIED="1331280994987" TEXT="Volume">
+<node CREATED="1330528131907" ID="ID_1789872811" MODIFIED="1331281079512" TEXT="L">
+<icon BUILTIN="yes"/>
+</node>
+<node CREATED="1331281073589" ID="ID_112685797" MODIFIED="1331281083619" TEXT="D">
+<icon BUILTIN="help"/>
+</node>
 </node>
 <node CREATED="1330525307753" ID="ID_1680597048" MODIFIED="1330525324608" TEXT="Length frequencies"/>
 </node>
-<node CREATED="1330525267975" FOLDED="true" ID="ID_991771839" MODIFIED="1331133102381" TEXT="biology">
+<node CREATED="1330525267975" ID="ID_991771839" MODIFIED="1331280984809" TEXT="biology">
 <icon BUILTIN="full-2"/>
-<node CREATED="1330525272086" ID="ID_6475197" MODIFIED="1330528226067" STYLE="bubble" TEXT="information based knife edge mat ogive"/>
-<node CREATED="1330525280629" ID="ID_1629490794" MODIFIED="1330525290126" TEXT="Indications for growth model"/>
+<node CREATED="1330525272086" ID="ID_6475197" MODIFIED="1331281299683" STYLE="bubble" TEXT="Information based knife edge mat ogive (minimum)"/>
+<node CREATED="1330525280629" ID="ID_1629490794" MODIFIED="1331281210456" TEXT="Indications for growth model (minimum)"/>
 <node CREATED="1330525716646" ID="ID_1738546824" MODIFIED="1330525720372" TEXT="L-W"/>
 </node>
-<node CREATED="1330526006605" FOLDED="true" ID="ID_1882895849" MODIFIED="1330677997060" TEXT="Index of abundance">
+<node CREATED="1330526006605" FOLDED="true" ID="ID_1882895849" MODIFIED="1331281909613" TEXT="Index of abundance">
 <icon BUILTIN="full-3"/>
-<node COLOR="#338800" CREATED="1330529254647" ID="ID_1692086015" MODIFIED="1330529271508" TEXT="Discuss with genetics what could be used here"/>
+<node CREATED="1331281542756" ID="ID_1161064180" MODIFIED="1331281589516" TEXT="Length frequencies">
+<icon BUILTIN="help"/>
+<node CREATED="1331281551089" ID="ID_33991260" MODIFIED="1331281561168" TEXT="Indirect from selectivity studies"/>
+<node CREATED="1331281563300" ID="ID_18522703" MODIFIED="1331281567660" TEXT="Direct observations"/>
+</node>
 </node>
 </node>
 <node CREATED="1330594099228" FOLDED="true" HGAP="19" ID="ID_189098048" MODIFIED="1331150471651" POSITION="right" TEXT="Genetics" VSHIFT="-1">
@@ -385,11 +393,11 @@
 <icon BUILTIN="help"/>
 </node>
 </node>
-<node CREATED="1330527861809" FOLDED="true" ID="ID_182525746" MODIFIED="1331150441627" POSITION="right" TEXT="Biomass model/stock assessment model">
+<node CREATED="1330527861809" FOLDED="true" ID="ID_182525746" MODIFIED="1331282708308" POSITION="right" TEXT="Biomass model/stock assessment model">
 <icon BUILTIN="idea"/>
 <icon BUILTIN="full-3"/>
 <node CREATED="1330527987027" ID="ID_574857030" MODIFIED="1330530359900" TEXT="Unscaled"/>
-<node CREATED="1330527953821" FOLDED="true" HGAP="22" ID="ID_1145772236" MODIFIED="1331133102382" TEXT="Scaled">
+<node CREATED="1330527953821" HGAP="22" ID="ID_1145772236" MODIFIED="1331281938830" TEXT="Scaled">
 <icon BUILTIN="button_ok"/>
 <node CREATED="1330607465944" ID="ID_1869390063" MODIFIED="1330607480124" TEXT="Model to be applied rapidly to a wide range of situations"/>
 <node CREATED="1330531222876" ID="ID_253239840" MODIFIED="1330531234445" TEXT="Results must be used for advise on a quantitative basis"/>
@@ -399,15 +407,15 @@
 </node>
 <node CREATED="1330527978766" ID="ID_672556634" MODIFIED="1330530359899" TEXT="Referenced"/>
 </node>
-<node CREATED="1330682986121" FOLDED="true" HGAP="19" ID="ID_1178125932" LINK="report/MSE.jpg" MODIFIED="1331151848814" POSITION="right" TEXT="Assessment/advise methodology">
+<node CREATED="1330682986121" FOLDED="true" HGAP="19" ID="ID_1178125932" LINK="report/MSE.jpg" MODIFIED="1331285274990" POSITION="right" TEXT="Assessment/advise methodology">
 <icon BUILTIN="idea"/>
 <icon BUILTIN="full-4"/>
-<node CREATED="1330683042738" ID="ID_1509889174" MODIFIED="1330691952006" TEXT="Conditioned on data moderate stock">
+<node CREATED="1330683042738" ID="ID_1509889174" MODIFIED="1331282719235" TEXT="data moderate stock">
 <icon BUILTIN="messagebox_warning"/>
 </node>
 <node CREATED="1330683061422" ID="ID_1323163301" MODIFIED="1331133863181" TEXT="Standard procedures to test assumptions and conditions and give advise"/>
-<node CREATED="1330683025820" FOLDED="true" ID="ID_1051047777" MODIFIED="1331150997111" TEXT="OM">
-<node CREATED="1330527861809" FOLDED="true" ID="ID_753527269" MODIFIED="1330683012996" TEXT="Biomass model/stock assessment model">
+<node CREATED="1330683025820" FOLDED="true" ID="ID_1051047777" MODIFIED="1331283407676" TEXT="OM">
+<node CREATED="1330527861809" FOLDED="true" ID="ID_753527269" MODIFIED="1331282924439" TEXT="Biomass model/stock assessment model">
 <node CREATED="1330527987027" ID="ID_937079421" MODIFIED="1330530359900" TEXT="Unscaled"/>
 <node CREATED="1330527953821" FOLDED="true" HGAP="22" ID="ID_529763092" MODIFIED="1330680802999" TEXT="Scaled">
 <icon BUILTIN="button_ok"/>
@@ -419,11 +427,20 @@
 </node>
 <node CREATED="1330527978766" ID="ID_1000075556" MODIFIED="1330530359899" TEXT="Referenced"/>
 </node>
-<node CREATED="1330683131406" ID="ID_1312398139" MODIFIED="1330683159097" TEXT="A set of LH &amp; | other bio/gen relevant factors"/>
+<node CREATED="1330683131406" FOLDED="true" ID="ID_1312398139" MODIFIED="1331283173954" TEXT="A set of LH &amp; | other bio/gen relevant factors">
+<node CREATED="1331282742139" ID="ID_950885789" MODIFIED="1331282966868" TEXT="Conditioning using LH to fill gaps and introduce variability on the  OM">
+<icon BUILTIN="idea"/>
+<icon BUILTIN="bell"/>
 </node>
-<node CREATED="1330683034426" FOLDED="true" ID="ID_496704793" MODIFIED="1331150993132" TEXT="MP">
+<node CREATED="1331282858501" ID="ID_102707245" MODIFIED="1331282964017" TEXT="Set a protocol to define the range of OM based on LH (e.g. LH+ 1 sd etc)">
+<icon BUILTIN="idea"/>
+<icon BUILTIN="bell"/>
+</node>
+</node>
+</node>
+<node CREATED="1330683034426" FOLDED="true" ID="ID_496704793" MODIFIED="1331285256989" TEXT="MP">
 <node CREATED="1330683103527" ID="ID_162848549" MODIFIED="1330683115776" TEXT="A set of metric generators to HCR"/>
-<node CREATED="1330683121272" FOLDED="true" ID="ID_739177326" MODIFIED="1331133102385" TEXT="A set of HCR">
+<node CREATED="1330683121272" ID="ID_739177326" MODIFIED="1331285226275" TEXT="A set of HCR">
 <node CREATED="1330683283997" ID="ID_804428826" MODIFIED="1330683344830" TEXT="Generic, multi-element, switch on/off"/>
 </node>
 </node>
@@ -435,14 +452,14 @@
 <icon BUILTIN="help"/>
 <icon BUILTIN="full-2"/>
 </node>
-<node CREATED="1331151041009" FOLDED="true" ID="ID_1134793411" MODIFIED="1331151512066" TEXT="Statistic to include the uncertainty of the system">
+<node CREATED="1331151041009" FOLDED="true" ID="ID_1134793411" MODIFIED="1331285264980" TEXT="Statistic to include the uncertainty of the system">
 <node CREATED="1331151078133" ID="ID_486670522" MODIFIED="1331151100477" TEXT="B_{obs}-B_{true}"/>
 <node CREATED="1331151103386" FOLDED="true" ID="ID_1155912144" MODIFIED="1331151506180" TEXT="(C_{after implementation}/C_{from hcr}) / (B_{true}/B_{obs})">
 <node CREATED="1331151328409" ID="ID_908150950" MODIFIED="1331151500509" TEXT="In my way back home, I was thinking about the overall statistic you were looking for to compare things. Instead of comparing only B_{true} and B_{obs} that would account for observation and estimation error, I think we should also compare the catch established according to the management procedure and the actual catch. So I was thinking on something like:&#xa;     C_{after implementation}/B_{true}  /  C_{from hcr}/B_{obs}&#xa;&#xa;In the numerator we have the actual harvest rate (the harvest rate in the operating model) and the denominator the theoretical harvest rate (the harvest rate in the management procedure).  This could also be written as&#xa;     C_{after implementation}/C_{from hcr}  /  B_{true}/B_{obs}&#xa;&#xa;And in this way, it could be interpreted as a measure of the trade-off between implementation error and observation-estimation error. Being close to 1 could be interpreted as errors being compensated and being able to manage &#x201c;well&#x201d; the system. The clear disadvantage is that it is not symmetric: goes in (0,1) in one side and (1,infinity) on the other.&#xa;&#xa;I don&#x2019;t know how a performance measure like this would work to measure the errors in the system. I have never tried or seen it. Then, of course you would need other performance measures according to the management objectives&#x2026; but could something like this be useful?     "/>
 </node>
 </node>
 </node>
-<node CREATED="1330675227937" FOLDED="true" ID="ID_668668027" MODIFIED="1331151844223" POSITION="right" TEXT="Simulation experiment" VSHIFT="-2">
+<node CREATED="1330675227937" ID="ID_668668027" MODIFIED="1331285276587" POSITION="right" TEXT="Simulation experiment" VSHIFT="-2">
 <icon BUILTIN="messagebox_warning"/>
 <icon BUILTIN="full-5"/>
 <node CREATED="1330675235121" FOLDED="true" ID="ID_1812210780" MODIFIED="1330693225127" TEXT="Simulate data that fits the definition of moderate data">
