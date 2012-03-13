@@ -1,6 +1,6 @@
 <map version="0.9.0">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1329482372022" ID="ID_602681990" MODIFIED="1331133102400" STYLE="bubble" TEXT="a4a KOM">
+<node CREATED="1329482372022" ID="ID_602681990" MODIFIED="1331651456049" STYLE="bubble" TEXT="a4a KOM">
 <node CREATED="1329482517705" FOLDED="true" ID="ID_1840948410" MODIFIED="1331133261999" POSITION="left" TEXT="Background">
 <node CREATED="1329482523970" ID="ID_1176614926" MODIFIED="1329482526366" TEXT="The implementation of the 2009 revision of the DCF generated the obligation to collect a large amount of information for all stock being subject to fisheries exploitation. Most of these stocks will have in the future, ~2020, time series of exploitation data more then 10 years long, although the information about the biology will most likely be limited, due to the high requirements of man power and logistics to process all the samples collected. These stocks may not fit directly into the &quot;data poor&quot; stock definition, neither will they have enought information to run sophisticated modelling methodologies. As scientists it is important think ahead and start developing methods to deal with such a large number of stocks.  "/>
 </node>
@@ -305,7 +305,7 @@
 <node CREATED="1330607442394" ID="ID_143329878" MODIFIED="1330607446203" TEXT="Massive data"/>
 <node CREATED="1330607465944" ID="ID_1982668966" MODIFIED="1330607480124" TEXT="Model to be applied rapidly to a wide range of situations"/>
 </node>
-<node CREATED="1330525260869" ID="ID_657362335" MODIFIED="1331282492163" POSITION="right" TEXT="Moderate data stock">
+<node CREATED="1330525260869" FOLDED="true" ID="ID_657362335" MODIFIED="1331651250824" POSITION="right" TEXT="Moderate data stock">
 <icon BUILTIN="idea"/>
 <icon BUILTIN="full-1"/>
 <node CREATED="1330525292389" ID="ID_1334341458" MODIFIED="1331280979805" TEXT="Exploitation">
@@ -336,12 +336,12 @@
 </node>
 </node>
 </node>
-<node CREATED="1330594099228" FOLDED="true" HGAP="19" ID="ID_189098048" MODIFIED="1331150471651" POSITION="right" TEXT="Genetics" VSHIFT="-1">
+<node CREATED="1330594099228" HGAP="19" ID="ID_189098048" MODIFIED="1331651255180" POSITION="right" TEXT="Genetics" VSHIFT="-1">
 <icon BUILTIN="idea"/>
 <icon BUILTIN="full-2"/>
-<node CREATED="1330611766643" FOLDED="true" ID="ID_310662773" MODIFIED="1331133102387" TEXT="population size">
+<node CREATED="1330611766643" ID="ID_310662773" MODIFIED="1331651256853" TEXT="population size">
 <icon BUILTIN="smily_bad"/>
-<node CREATED="1330610430219" FOLDED="true" ID="ID_1273559281" MODIFIED="1331133102386" TEXT="effective population size">
+<node CREATED="1330610430219" ID="ID_1273559281" MODIFIED="1331651317391" TEXT="effective population size">
 <icon BUILTIN="button_cancel"/>
 <node CREATED="1330610445337" ID="ID_1562880746" MODIFIED="1330610463985" TEXT="Doesn&apos;t work well at yearly time scales"/>
 </node>
@@ -350,7 +350,7 @@
 <icon BUILTIN="ksmiletris"/>
 </node>
 </node>
-<node CREATED="1330595350997" FOLDED="true" ID="ID_811625751" MODIFIED="1331133102387" TEXT="genetic diversity">
+<node CREATED="1330595350997" ID="ID_811625751" MODIFIED="1331651258163" TEXT="genetic diversity">
 <icon BUILTIN="smily_bad"/>
 <node CREATED="1330611485286" ID="ID_219791584" MODIFIED="1330611505570" TEXT="monitor specifi genes that are linked to specific biological functions"/>
 <node CREATED="1330611564527" ID="ID_1540302377" MODIFIED="1330611615127" TEXT="indicators are still difficult to id and measure"/>
@@ -359,7 +359,7 @@
 </node>
 <node CREATED="1330610476285" ID="ID_1559905085" MODIFIED="1330611340489" TEXT="reproductive success"/>
 </node>
-<node CREATED="1330595175784" FOLDED="true" ID="ID_844218236" MODIFIED="1331133102387" TEXT="IUU">
+<node CREATED="1330595175784" ID="ID_844218236" MODIFIED="1331651259930" TEXT="IUU">
 <icon BUILTIN="smily_bad"/>
 <node CREATED="1330615070600" ID="ID_1950729766" MODIFIED="1330615122959" TEXT="30-50% scale"/>
 <node CREATED="1330615329292" ID="ID_397511839" MODIFIED="1330615423548" TEXT="markers easy to compare between labs and reproducible"/>
@@ -367,9 +367,9 @@
 <node CREATED="1330612568679" ID="ID_1127566024" MODIFIED="1330612580840" TEXT="Monitor over time">
 <icon BUILTIN="button_ok"/>
 </node>
-<node CREATED="1330612433302" FOLDED="true" ID="ID_1539597157" MODIFIED="1331133102388" TEXT="Stock ID">
+<node CREATED="1330612433302" ID="ID_1539597157" MODIFIED="1331651261886" TEXT="Stock ID">
 <icon BUILTIN="button_ok"/>
-<node CREATED="1330612446548" FOLDED="true" ID="ID_680511445" MODIFIED="1331133102388" TEXT="inout rates">
+<node CREATED="1330612446548" ID="ID_680511445" MODIFIED="1331651266737" TEXT="inout rates">
 <icon BUILTIN="ksmiletris"/>
 <node CREATED="1330616243693" ID="ID_59071459" MODIFIED="1330616399155" TEXT="requires baselines">
 <icon BUILTIN="idea"/>
@@ -378,7 +378,7 @@
 </node>
 <node CREATED="1330612902376" ID="ID_1126392534" MODIFIED="1330612936064" TEXT="Id biological representative characteristics"/>
 </node>
-<node CREATED="1330610490615" FOLDED="true" ID="ID_1438644263" MODIFIED="1331133102399" TEXT="risk indicator">
+<node CREATED="1330610490615" ID="ID_1438644263" MODIFIED="1331651269224" TEXT="risk indicator">
 <icon BUILTIN="ksmiletris"/>
 <node CREATED="1330611379979" ID="ID_283865468" MODIFIED="1330611464614" TEXT="time evolution of distribution may give indications of something &quot;wrong&quot; going on"/>
 <node CREATED="1330611485286" ID="ID_1217512441" MODIFIED="1330611505570" TEXT="monitor specifi genes that are linked to specific biological functions"/>
@@ -391,6 +391,16 @@
 </node>
 <node CREATED="1330613365201" ID="ID_1029412553" MODIFIED="1331150391700" TEXT="MSE">
 <icon BUILTIN="help"/>
+<node CREATED="1330613368266" FOLDED="true" ID="ID_1760813127" MODIFIED="1330679917542" TEXT="What if we&apos;re exploring two pops with distinct biological characteristics">
+<icon BUILTIN="idea"/>
+<node CREATED="1330614434094" ID="ID_987659960" MODIFIED="1330614445198" TEXT="that are id by genetics"/>
+<node CREATED="1330614448860" ID="ID_925208969" MODIFIED="1330614463482" TEXT="%pop =&gt; HCR"/>
+</node>
+<node CREATED="1330616629833" FOLDED="true" ID="ID_657993302" MODIFIED="1330675170374" TEXT="how robust if my HCR to breaking stock assessment assunmptions of closed population">
+<icon BUILTIN="idea"/>
+<node CREATED="1330617243167" ID="ID_528090347" MODIFIED="1330617255358" TEXT="migration into fishery"/>
+<node CREATED="1330617257165" ID="ID_1952873922" MODIFIED="1330617263818" TEXT="migration into the SSB"/>
+</node>
 </node>
 </node>
 <node CREATED="1330527861809" FOLDED="true" ID="ID_182525746" MODIFIED="1331282708308" POSITION="right" TEXT="Biomass model/stock assessment model">
@@ -407,7 +417,7 @@
 </node>
 <node CREATED="1330527978766" ID="ID_672556634" MODIFIED="1330530359899" TEXT="Referenced"/>
 </node>
-<node CREATED="1330682986121" FOLDED="true" HGAP="19" ID="ID_1178125932" LINK="report/MSE.jpg" MODIFIED="1331285274990" POSITION="right" TEXT="Assessment/advise methodology">
+<node CREATED="1330682986121" FOLDED="true" HGAP="19" ID="ID_1178125932" LINK="report/MSE.jpg" MODIFIED="1331651287460" POSITION="right" TEXT="Assessment/advise methodology">
 <icon BUILTIN="idea"/>
 <icon BUILTIN="full-4"/>
 <node CREATED="1330683042738" ID="ID_1509889174" MODIFIED="1331282719235" TEXT="data moderate stock">
@@ -438,7 +448,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1330683034426" FOLDED="true" ID="ID_496704793" MODIFIED="1331285256989" TEXT="MP">
+<node CREATED="1330683034426" FOLDED="true" ID="ID_496704793" MODIFIED="1331651281625" TEXT="MP">
 <node CREATED="1330683103527" ID="ID_162848549" MODIFIED="1330683115776" TEXT="A set of metric generators to HCR"/>
 <node CREATED="1330683121272" ID="ID_739177326" MODIFIED="1331285226275" TEXT="A set of HCR">
 <node CREATED="1330683283997" ID="ID_804428826" MODIFIED="1330683344830" TEXT="Generic, multi-element, switch on/off"/>
@@ -459,7 +469,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1330675227937" ID="ID_668668027" MODIFIED="1331285276587" POSITION="right" TEXT="Simulation experiment" VSHIFT="-2">
+<node CREATED="1330675227937" FOLDED="true" ID="ID_668668027" MODIFIED="1331651313094" POSITION="right" TEXT="Simulation experiment" VSHIFT="-2">
 <icon BUILTIN="messagebox_warning"/>
 <icon BUILTIN="full-5"/>
 <node CREATED="1330675235121" FOLDED="true" ID="ID_1812210780" MODIFIED="1330693225127" TEXT="Simulate data that fits the definition of moderate data">
@@ -483,7 +493,7 @@
 <icon BUILTIN="full-4"/>
 <node CREATED="1330693607056" ID="ID_181979428" MODIFIED="1330693634707" TEXT="HCR with parameter depending on objective"/>
 </node>
-<node CREATED="1330675078885" FOLDED="true" ID="ID_1879261723" MODIFIED="1331151016805" TEXT="Tests">
+<node CREATED="1330675078885" ID="ID_1879261723" MODIFIED="1331651289008" TEXT="Tests">
 <icon BUILTIN="full-5"/>
 <node CREATED="1330675124058" ID="ID_444284402" MODIFIED="1330678618092" TEXT="How the length of the time series impacts the results">
 <icon BUILTIN="idea"/>
