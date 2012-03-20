@@ -1,0 +1,2403 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+% This file was converted to LaTeX by Writer2LaTeX ver. 1.0
+% see http://writer2latex.sourceforge.net for more info
+
+\usepackage[english]{babel}
+\usepackage{amsfonts}\usepackage{array}\usepackage{hhline}\title{}
+\author{gamitjo }
+\date{2012-03-20}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding T1
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+a4a kick-off meeting report
+\end_layout
+
+\begin_layout Section
+Background
+\end_layout
+
+\begin_layout Standard
+The implementation of the 2009 revision of the DCF generated the obligation
+ to collect a large amount of information for all stock being subject to
+ fisheries exploitation.
+ Most of these stocks will have in the future, ~2020, time series of exploitatio
+n data more then 10 years long, although the information about the biology
+ will most likely be limited, due to the high requirements of man power
+ and logistics to process all the samples collected.
+ These stocks don't fit into the "data poor" stock definition, neither will
+ they have enought information to run sophisticated modelling methodologies.
+ As scientists it is important think ahead and start developing methods
+ to deal with such a large number of stocks.
+\end_layout
+
+\begin_layout Subsection
+ToR and agenda
+\end_layout
+
+\begin_layout Standard
+The meeting took place ...
+ with the following terms of reference:
+\end_layout
+
+\begin_layout Itemize
+world wide needs of fisheries advice 
+\end_layout
+
+\begin_layout Itemize
+available stock assessment methods 
+\end_layout
+
+\begin_layout Itemize
+ways to make stock assessment in the context of management advise more robust
+ 
+\end_layout
+
+\begin_layout Itemize
+identify modules to build a MSE 
+\end_layout
+
+\begin_layout Itemize
+discuss progress of the initiative 
+\end_layout
+
+\begin_layout Standard
+and the following agenda:
+\end_layout
+
+\begin_layout Itemize
+Wednesday
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Introduction (E.Jardim)
+\end_layout
+
+\begin_layout Itemize
+Identify and describe the problem
+\end_layout
+
+\begin_layout Itemize
+Summary of WKLIFE (M.Azevedo)
+\end_layout
+
+\begin_layout Itemize
+Summary of south hemisphere initiative report (I.Mosqueira)
+\end_layout
+
+\begin_layout Itemize
+Summary of GFCM WK on Elasmobranchs (G.Chato)
+\end_layout
+
+\begin_layout Itemize
+Management of a selection of stocks from N.America (A.Cooper)
+\end_layout
+
+\begin_layout Itemize
+Discussion
+\end_layout
+
+\begin_layout Itemize
+Compile a set of possible solutions to the problem
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Thursday
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Seminar to JRC on Fisheries Modelling (09:30 – 11:00)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Welcome message by Alessandra Zampieri (JRC HoU)
+\end_layout
+
+\begin_layout Itemize
+MSE by Jose de Oliveira (CEFAS)
+\end_layout
+
+\begin_layout Itemize
+Catch Dynamic Model by Ruben Roa (AZTI)
+\end_layout
+
+\begin_layout Itemize
+Genetics and quantitative fisheries by Carvalho (Bangor Uni.) & Nielsen (DTU-AQUA
+)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Elaborate on advantages and disadvantages of each solution
+\end_layout
+
+\begin_layout Itemize
+Revisit the solutions and decide which are the most promising
+\end_layout
+
+\begin_layout Itemize
+Agree on a framework for testing: MSE, statistical analysis, simulated data,
+ etc.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Friday
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Discuss implementation and testing of the best solutions
+\end_layout
+
+\begin_layout Itemize
+Elaborate on the expected outcome
+\end_layout
+
+\begin_layout Itemize
+Challenges and opportunities
+\end_layout
+
+\begin_layout Itemize
+Workplan
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Participation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="13" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Affiliation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+email
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Andrew Cooper
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ Simon Fraser University (CA)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chato Osio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ Joint Research Center (EC)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Einar Nielsen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ Danish Technical University (DK)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ernesto Jardim (chair)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Joint Research Center (EC)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ernesto.jardim@jrc.ec.europa.eu
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Finlay Scott
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CEFAS (UK)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gary Carvalho
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ Bangor University (UK)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Iago Mosqueira
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Joint Research Center (EC)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jann Marthinson
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Joint Research Center (EC)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jose de Oliveira
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CEFAS - UK)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Leire Ibarriaga
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ AZTI Technalia (SP)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Manuela Azevedo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ Institute for Marine and Athmospheric research (PT)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ruben Roa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AZTI Technalia (SP)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Notes
+\end_layout
+
+\begin_layout Itemize
+MSE and a4a are on opposite sides
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+MSE as a mean to id the value of the information 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+MSE to test the limits of the methods 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+GFCM elasmobranchs
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+PSA
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Very qualitative not suitable (easily) to quantitative frameworks 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+WKLIFE
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Look at and discuss approaches that could come up with Frefpnts that could
+ be used as Fmsy proxies 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Proxies for MSY based on LH
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Yes, YPR or %SPR 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Where are we ?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+No major progress.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+How to get to the reference ? 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Compile LH data into categories of the information available 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+US management
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Information poor VS data poor 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+MS act
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Science sets the thresholds 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Managers can
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+textquotesingle
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+t go above it 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Hard environment due to lawsuits 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Managers set the risk level of overfishing 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Methodologies to set the reference points and uncertainty has to be consistent
+ across stocks 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+If mixed fisheries protect the most vulnerable of the complex 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Model VS management
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Management based on stock assessment model
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Depending on the outcome there must be a different HCR, or a generic HCR
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+stock assessment model depends on management needs 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Method to id which models require attention (more assessment) 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Method to apply over a large range of stocks/situations 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Catch dynamics model
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+At the scale of the fishing operation NOT at the scale of the population
+ dynamics 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+perturbations showing new input of fish to the fishery
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+inserted manually or is there a statistical process 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+use biomass estimates to adjust a BioDyn replacing the CPUE index 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+High frequency data of catch and effort 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Link with FLR 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Works like a survey executed by the fleet
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+if a reference fleet is used the annual estimates can be compared because
+ the area and selectivity will be constant 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+How can MSE helps ?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+not so much as a HCR decision algorithm 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+simulation framework for testing & co.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tests
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+How the length of the time series impacts the results 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+How violation of assumptions or fixed parameters impact the results 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+What if we
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+textquotesingle
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+re exploring two pops with distinct biological characteristics
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+that are id by genetics %pop =
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+textgreater
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ HCR 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+how robust if my HCR to breaking stock assessment assunmptions of closed
+ population
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+migration into fishery migration into the SSB 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Test model complexity, does a BioDyn model works better than a structured
+ model
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Will depend on the reliability of the abundance index 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+deal with biomass estimates
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+residuals = om bio - mp bio 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+As a framework for management advise 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Genetics
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Presentation
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Genetic stock
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Individuals that share a common gene pool and randomly breeding 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Stock ID 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Quantitative and qualitative change over time 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+INdependent demographics 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Stability over time 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Get information at a finer scale 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Common currency 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+IUU 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Genetic diversity 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Moving from short term to long term or merging both 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Genomics allow to look at a large part of the genome and identify which
+ genes are able to better differenciate the populations 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+using genomics to id sthomac content 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Markers can change very rapidly or being very stable 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Industrial process instead of an art
+\end_layout
+
+\begin_layout Itemize
+Automatic stock assessment model
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+In the sense of adjusting the model during the MP 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Not including the moment of conditioning the OM, which requires the best
+ adjustement 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+The performance of the model is evaluated during the projections 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Massive data 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Model to be applied rapidly to a wide range of situations 
+\end_layout
+
+\begin_layout Section
+\begin_inset Argument
+status collapsed
+
+\begin_layout Plain Layout
+Moderate data stock
+\end_layout
+
+\end_inset
+
+Moderate data stock
+\end_layout
+
+\begin_layout Itemize
+Exploitation
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Nominal effort 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Volume
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+L 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+D 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Length frequencies 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+biology
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Information based knife edge mat ogive (minimum) 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Indications for growth model (minimum) 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+L-W 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Index of abundance
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Length frequencies
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Indirect from selectivity studies 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Direct observations 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Genetics
+\end_layout
+
+\begin_layout Itemize
+population size
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+effective population size
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Doesn
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+textquotesingle
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+t work well at yearly time scales 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+frequency of rare alleles 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+May work for endareged species 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+genetic diversity
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+monitor specifi genes that are linked to specific biological functions 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+indicators are still difficult to id and measure 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+May work for endareged species 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+reproductive success 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+IUU
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+30-50% scale 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+markers easy to compare between labs and reproducible 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Monitor over time 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Stock ID
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+inout rates
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+requires baselines 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+% of individuals 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Id biological representative characteristics 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+risk indicator
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+time evolution of distribution may give indications of something 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+"
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+wrong
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+"
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ going on 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+monitor specifi genes that are linked to specific biological functions 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+mixt stock analysis
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+helps borrowing information between stocks 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+rate of change of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+"
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+fast
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+"
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ allele frequency 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+MSE
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+What if we
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+textquotesingle
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+re exploring two pops with distinct biological characteristics
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+that are id by genetics 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+%pop =
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+textgreater
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ HCR 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+how robust if my HCR to breaking stock assessment assunmptions of closed
+ population
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+migration into fishery 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+migration into the SSB 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Biomass model/stock assessment model
+\end_layout
+
+\begin_layout Itemize
+Unscaled 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Scaled
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Model to be applied rapidly to a wide range of situations 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Results must be used for advise on a quantitative basis 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+surplus to get biomass and feed to length structure 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Referenced 
+\end_layout
+
+\begin_layout Section
+Assessment/advise methodology
+\end_layout
+
+\begin_layout Standard
+report/MSE.jpg
+\end_layout
+
+\begin_layout Itemize
+data moderate stock 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Standard procedures to test assumptions and conditions and give advise 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+OM
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Biomass model/stock assessment model
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Unscaled 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Scaled
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Model to be applied rapidly to a wide range of situations 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Results must be used for advise on a quantitative basis 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+surplus to get biomass and feed to length structure 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Referenced 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+A set of LH & 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbar
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ other bio/gen relevant factors
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Conditioning using LH to fill gaps and introduce variability on the OM 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Set a protocol to define the range of OM based on LH (e.g.
+ LH+ 1 sd etc) 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+MP
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A set of metric generators to HCR 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+A set of HCR
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Generic, multi-element, switch on/off 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Which elements shoud constitute the standard 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Presenting results 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Statistic to include the uncertainty of the system
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+B_{obs}-B_{true} 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+(C_{after implementation}/C_{from hcr}) / (B_{true}/B_{obs})
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+In my way back home, I was thinking about the overall statistic you were
+ looking for to compare things.
+ Instead of comparing only B_{true} and B_{obs} that would account for observati
+on and estimation error, I think we should also compare the catch established
+ according to the management procedure and the actual catch.
+ So I was thinking on something like:
+\begin_inset Newline newline
+\end_inset
+
+C_{after implementation}/B_{true} / C_{from hcr}/B_{obs}
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+In the numerator we have the actual harvest rate (the harvest rate in the
+ operating model) and the denominator the theoretical harvest rate (the
+ harvest rate in the management procedure).
+ This could also be written as
+\begin_inset Newline newline
+\end_inset
+
+C_{after implementation}/C_{from hcr} / B_{true}/B_{obs}
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+And in this way, it could be interpreted as a measure of the trade-off between
+ implementation error and observation-estimation error.
+ Being close to 1 could be interpreted as errors being compensated and being
+ able to manage “well” the system.
+ The clear disadvantage is that it is not symmetric: goes in (0,1) in one
+ side and (1,infinity) on the other.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+I don’t know how a performance measure like this would work to measure the
+ errors in the system.
+ I have never tried or seen it.
+ Then, of course you would need other performance measures according to
+ the management objectives… but could something like this be useful? 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Simulation experiment
+\end_layout
+
+\begin_layout Itemize
+Simulate data that fits the definition of moderate data
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ask Daniel Howell for spatial data 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+gislasim 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+NOAA toolbox 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Link with WGMG 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Use real data that fits the definition of moderate data
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+conditional simulation of pop and fisheries and test assessment methods
+ 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Id relevant elements that are subject for testing 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Write MSE using the ICES HCR 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Expand to more HCR
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+HCR with parameter depending on objective 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Tests
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+How the length of the time series impacts the results 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+How violation of assumptions or fixed parameters impact the results 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+What if we
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+textquotesingle
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+re exploring two pops with distinct biological characteristics
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+that are id by genetics 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+%pop =
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+textgreater
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ HCR 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+how robust if my HCR to breaking stock assessment assunmptions of closed
+ population
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+migration into fishery 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+migration into the SSB 
+\end_layout
+
+\end_deeper
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+Test model complexity, does a BioDyn model works better than a structured
+ model
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Will depend on the reliability of the abundance index 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Operationalise
+\end_layout
+
+\begin_layout Itemize
+FLR 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+short time visits 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+scientific meetings 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+experts have some time for dev.
+ and review during next year 
+\end_layout
+
+\end_body
+\end_document
