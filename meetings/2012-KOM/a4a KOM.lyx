@@ -4,15 +4,17 @@
 \begin_header
 \textclass article
 \begin_preamble
-% This file was converted to LaTeX by Writer2LaTeX ver. 1.0
-% see http://writer2latex.sourceforge.net for more info
-
 \usepackage[english]{babel}
-\usepackage{amsfonts}\usepackage{array}\usepackage{hhline}\title{}
-\author{gamitjo }
-\date{2012-03-20}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{hhline}
 \end_preamble
 \use_default_options false
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -36,8 +38,8 @@
 \paperfontsize default
 \spacing onehalf
 \use_hyperref false
-\papersize default
-\use_geometry false
+\papersize a4paper
+\use_geometry true
 \use_amsmath 2
 \use_esint 1
 \use_mhchem 0
@@ -46,12 +48,16 @@
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
-\suppress_date false
+\suppress_date true
 \use_refstyle 0
 \index Index
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation skip
@@ -77,27 +83,41 @@ a4a kick-off meeting report
 Introduction
 \end_layout
 
-\begin_layout Subsection
-Background
-\end_layout
-
 \begin_layout Standard
 The implementation of the 2009 revision of the DCF generated the obligation
- to collect a large amount of information for all stock being subject to
+ to collect a large amount of information for all stocks being subject to
  fisheries exploitation.
- Most of these stocks will have in the future, ~2020, time series of exploitatio
-n data more then 10 years long, although the information about the biology
- will most likely be limited, due to the high requirements of man power
- and logistics to process all the samples collected.
- These stocks don't fit into the "data poor" stock definition, neither will
- they have enought information to run sophisticated modelling methodologies.
- As scientists it is important think ahead and start developing methods
- to deal with such a large number of stocks.
+ Most of these stocks will have in the future, 
+\begin_inset Formula $\sim$
+\end_inset
+
+2020, time series of exploitation data more then 10 years long, although
+ the information about the biology will most likely be limited due to the
+ high requirements of man power and logistics to process all the samples
+ collected.
+ 
 \end_layout
 
 \begin_layout Standard
-JRC following it's mission of antecipating policy implementation issues
- decided to move forward with 
+These stocks (will) have a moderate amount of information and don't fit
+ into the "data poor" stock definition, neither will allow runing sophisticated
+ modelling methods.
+ Having stock assessment and adisory methods to apply to a large number
+ of moderate data stocks, raise interesting challenges and creates opportunities
+ worth exploring.
+ For example, approaching stock assessment as a data generating engine,
+ having a common stock assessment methodology or analysing massive stock
+ assessment results, open the possibility of issuing advise for more species
+ in a multifleet, multispecies framework and promotes comparative advise
+ analysis.
+ 
+\end_layout
+
+\begin_layout Standard
+As scientists it is important to think ahead and start developing such methodolo
+gies.
+ JRC following it's mission of antecipating policy implementation issues
+ decided to move forward with the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -105,7 +125,7 @@ Assessment for All
 \begin_inset Quotes erd
 \end_inset
 
- (a4a) initiative to: 
+ (a4a) initiative, aiming to: 
 \end_layout
 
 \begin_layout Enumerate
@@ -119,7 +139,22 @@ trigger the discussion about the problem of massive stock assessment;
 \end_layout
 
 \begin_layout Enumerate
-capacity building.
+build capacity on stock assessment and fisheries management advise.
+\end_layout
+
+\begin_layout Standard
+The initiative has a web repository where all the presentations, reports,
+ code and data can be found
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+https://github.com/ejardim/a4a
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -133,24 +168,25 @@ The kick-off meeting of the initiative took place between 29/February and
 \end_layout
 
 \begin_layout Enumerate
-world wide needs of fisheries advice 
+world wide needs of fisheries advice; 
 \end_layout
 
 \begin_layout Enumerate
-available stock assessment methods 
+available stock assessment methods; 
 \end_layout
 
 \begin_layout Enumerate
-ways to make stock assessment in the context of management advise more robust
+ways to make stock assessment in the context of management advise more robust;
  
 \end_layout
 
 \begin_layout Enumerate
-identify modules to build a MSE 
+identify modules to build a MSE; 
 \end_layout
 
 \begin_layout Enumerate
-discuss progress of the initiative 
+discuss progress of the initiative.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -218,8 +254,8 @@ Catch Dynamic Model by Ruben Roa (AZTI)
 \end_layout
 
 \begin_layout Itemize
-Genetics and quantitative fisheries by Carvalho (Bangor Uni.) & Nielsen (DTU-AQUA
-)
+Genetics and quantitative fisheries by Gary Carvalho (B.U.) & Heiner Nielsen
+ (DTU-AQUA)
 \end_layout
 
 \end_deeper
@@ -261,10 +297,6 @@ Workplan
 \end_deeper
 \begin_layout Subsection
 Participation
-\end_layout
-
-\begin_layout Standard
-A set of scientists were invited to participate which are listed below:
 \end_layout
 
 \begin_layout Standard
@@ -442,7 +474,7 @@ Finlay Scott
 \begin_inset Text
 
 \begin_layout Plain Layout
-CEFAS (UK)
+Centre for Environment, Fisheries & Aquaculture Science (UK)
 \end_layout
 
 \end_inset
@@ -558,7 +590,7 @@ Jose de Oliveira
 \begin_inset Text
 
 \begin_layout Plain Layout
-CEFAS - UK)
+Centre for Environment, Fisheries & Aquaculture Science (UK)
 \end_layout
 
 \end_inset
@@ -616,7 +648,7 @@ Manuela Azevedo
 \begin_inset Text
 
 \begin_layout Plain Layout
-Institute for Marine and Athmospheric Research (PT)
+Portuguese Institute for Sea and Atmosphere (PT)
 \end_layout
 
 \end_inset
@@ -659,23 +691,27 @@ AZTI Technalia (SP)
 \end_layout
 
 \begin_layout Section
-Results
+Outcomes
 \end_layout
 
 \begin_layout Standard
 The ToR and agenda were followed loosely to allow for discussions and brain
- storming taking place.
+ storming.
  
 \end_layout
 
 \begin_layout Standard
-A major subject to be discussed and agreed was to consolidate the ideas
- regarding the initiative aims and expectations.
+The overall objective was to consolidate ideas regarding the initiative's
+ aims, expectations and opeartionalization.
  It was critical to better define the problem the initiative is attempting
- to contribute to and try to concretize the range of solutions available
- and which the initiative should pursue.
- In that sense the meeting was succefull and all these objectives were achieved.
- The discussions taken place gave raise to the definition of 
+ to contribute to, discuss the range of solutions available and define which
+ ones the initiative should pursue.
+ In that sense the meeting was succefull and the objectives were achieved.
+ 
+\end_layout
+
+\begin_layout Standard
+The discussions taken place gave raise to the definition of 
 \begin_inset Quotes eld
 \end_inset
 
@@ -685,28 +721,19 @@ moderate data stock
 
 , a major step to understand where the initiative pretends to contribute.
  The issue of introducing genetics in fisheries management was largely discussed
- and several clarifications were possible as well as the identification
+ and several clarifications were possible, as well as the identification
  of promising areas of convergence between fisheries modelling and genetics.
- Another issue to be 
-\begin_inset Quotes eld
-\end_inset
-
-grounded
-\begin_inset Quotes erd
-\end_inset
-
- was the assessment model(s) to be explored, for which a set of characteristics
- were defined leaving open the exact framework to be used.
+ Another issue to be grounded was the assessment model(s) to be explored,
+ for which a set of characteristics were defined but leaving open the exact
+ framework to be used.
  A step further was taken by designing the type of Management Strategies
  Evaluation the initiative will promote/develop as a standard advise methodology
  for these kind of stocks.
- In a more operational setting the group defined a simulation experiment
+ In a more pragmatic setting the group loosely defined a simulation experiment
  to be carried out and a set of subjects to be tested.
-\end_layout
-
-\begin_layout Standard
-Discussed how can a4a be operationalized
-\end_layout
+ Additionaly the group discussed the a4a operationalization.
+\begin_inset Note Note
+status collapsed
 
 \begin_layout Itemize
 Industrial process instead of an art
@@ -739,76 +766,79 @@ Massive data
 Model to be applied rapidly to a wide range of situations 
 \end_layout
 
-\begin_layout Section
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Moderate data stock
 \end_layout
 
-\begin_layout Itemize
-Exploitation
+\begin_layout Standard
+The group discussed the characteristics of a 
+\begin_inset Quotes eld
+\end_inset
+
+moderate data stock
+\begin_inset Quotes erd
+\end_inset
+
+ in terms of data availability and concluded on the following definition.
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Nominal effort 
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Volume
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-L 
+\begin_layout Standard
+A moderate data stock has at least data on:
 \end_layout
 
 \begin_layout Itemize
-D 
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Length frequencies 
+nominal effort, 
 \end_layout
 
 \begin_layout Itemize
-biology
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Information based knife edge mat ogive (minimum) 
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Indications for growth model (minimum) 
+volume of catches in weight (which should include landings and discards),
+ 
 \end_layout
 
 \begin_layout Itemize
-L-W 
+length structure of the catches (which should include landings and discards),
 \end_layout
 
 \begin_layout Itemize
-Index of abundance
+information based maturity ogive (parameters are not educated guesses but
+ based on information),
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
-Length frequencies
+information based growth model (parameters are not educated guesses but
+ based on information),
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
-Indirect from selectivity studies 
+length-weight relationship,
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
-Direct observations 
+index of abundance (the type of index is left open on purpose, it could
+ be a survey or CPUE),
 \end_layout
 
-\end_deeper
+\begin_layout Itemize
+length information for the index of abundance (based on selectivity studies
+ or direct observations)
+\end_layout
+
+\begin_layout Standard
+The length of the time series is not specified on pourpose, it will depend
+ on the species' longevity, however it was generally accepted as a rule
+ of thumb that it should cover at least one cohort [
+\color red
+!!==>> CHECK THIS, IT WAS NOT CLEARLY DISCUSSED DURING THE MEETING <<==!!
+\color inherit
+].
+ 
+\end_layout
+
 \begin_layout Section
 Genetics
 \end_layout

@@ -1,0 +1,399 @@
+%% LyX 2.0.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=3cm,bmargin=2cm,lmargin=2cm,rmargin=2cm}
+\setlength{\parskip}{\medskipamount}
+\setlength{\parindent}{0pt}
+\usepackage{color}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\onehalfspacing
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\@ifundefined{date}{}{\date{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage[english]{babel}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{hhline}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\title{a4a kick-off meeting report}
+
+\maketitle
+
+\section{Introduction}
+
+The implementation of the 2009 revision of the DCF generated the obligation
+to collect a large amount of information for all stocks being subject
+to fisheries exploitation. Most of these stocks will have in the future,
+$\sim$2020, time series of exploitation data more then 10 years long,
+although the information about the biology will most likely be limited
+due to the high requirements of man power and logistics to process
+all the samples collected. 
+
+These stocks (will) have a moderate amount of information and don't
+fit into the \textquotedbl{}data poor\textquotedbl{} stock definition,
+neither will allow runing sophisticated modelling methods. Having
+stock assessment and adisory methods to apply to a large number of
+moderate data stocks, raise interesting challenges and creates opportunities
+worth exploring. For example, approaching stock assessment as a data
+generating engine, having a common stock assessment methodology or
+analysing massive stock assessment results, open the possibility of
+issuing advise for more species in a multifleet, multispecies framework
+and promotes comparative advise analysis. 
+
+As scientists it is important to think ahead and start developing
+such methodologies. JRC following it's mission of antecipating policy
+implementation issues decided to move forward with the ``Assessment
+for All'' (a4a) initiative, aiming to: 
+\begin{enumerate}
+\item develop an assessment method targeting stocks that have a reduced
+knowledge base on biology and moderate time series on exploitation
+and abundance; 
+\item trigger the discussion about the problem of massive stock assessment;
+\item build capacity on stock assessment and fisheries management advise.
+\end{enumerate}
+The initiative has a web repository where all the presentations, reports,
+code and data can be found%
+\footnote{https://github.com/ejardim/a4a%
+}.
+
+
+\subsection{Objectives and organization}
+
+The kick-off meeting of the initiative took place between 29/February
+and 02/March of 2012 at the JRC head quarters in Varese, Italy, chaired
+by Ernesto Jardim (JRC/EC), with the following terms of reference:
+\begin{enumerate}
+\item world wide needs of fisheries advice; 
+\item available stock assessment methods; 
+\item ways to make stock assessment in the context of management advise
+more robust; 
+\item identify modules to build a MSE; 
+\item discuss progress of the initiative. 
+\end{enumerate}
+and the following agenda:
+\begin{itemize}
+\item Wednesday
+
+\begin{itemize}
+\item Introduction (E.Jardim)
+\item Identify and describe the problem
+\item Summary of WKLIFE (M.Azevedo)
+\item Summary of south hemisphere initiative report (I.Mosqueira)
+\item Summary of GFCM WK on Elasmobranchs (G.Chato)
+\item Management of a selection of stocks from N.America (A.Cooper)
+\item Discussion
+\item Compile a set of possible solutions to the problem
+\end{itemize}
+\item Thursday
+
+\begin{itemize}
+\item Seminar to JRC on Fisheries Modelling (09:30 – 11:00)
+
+\begin{itemize}
+\item Welcome message by Alessandra Zampieri (JRC HoU)
+\item MSE by Jose de Oliveira (CEFAS)
+\item Catch Dynamic Model by Ruben Roa (AZTI)
+\item Genetics and quantitative fisheries by Gary Carvalho (B.U.) \& Heiner
+Nielsen (DTU-AQUA)
+\end{itemize}
+\item Elaborate on advantages and disadvantages of each solution
+\item Revisit the solutions and decide which are the most promising
+\item Agree on a framework for testing: MSE, statistical analysis, simulated
+data, etc.
+\end{itemize}
+\item Friday
+
+\begin{itemize}
+\item Discuss implementation and testing of the best solutions
+\item Elaborate on the expected outcome
+\item Challenges and opportunities
+\item Workplan
+\end{itemize}
+\end{itemize}
+
+\subsection{Participation}
+
+\begin{tabular}{rrl}
+\hline 
+Name &  & Affiliation\tabularnewline
+\hline 
+Andrew Cooper &  & Simon Fraser University (CA)\tabularnewline
+Chato Osio &  & Joint Research Center (EC)\tabularnewline
+Einar Nielsen &  & Danish Technical University (DK)\tabularnewline
+Ernesto Jardim (chair) &  & Joint Research Center (EC)\tabularnewline
+Finlay Scott &  & Centre for Environment, Fisheries \& Aquaculture Science (UK)\tabularnewline
+Gary Carvalho &  & Bangor University (UK)\tabularnewline
+Iago Mosqueira &  & Joint Research Center (EC)\tabularnewline
+Jann Marthinson &  & Joint Research Center (EC)\tabularnewline
+Jose de Oliveira &  & Centre for Environment, Fisheries \& Aquaculture Science (UK)\tabularnewline
+Leire Ibarriaga &  & AZTI Technalia (SP)\tabularnewline
+Manuela Azevedo &  & Portuguese Institute for Sea and Atmosphere (PT)\tabularnewline
+Ruben Roa &  & AZTI Technalia (SP)\tabularnewline
+\hline 
+\end{tabular}
+
+
+\section{Outcomes}
+
+The ToR and agenda were followed loosely to allow for discussions
+and brain storming. 
+
+The overall objective was to consolidate ideas regarding the initiative's
+aims, expectations and opeartionalization. It was critical to better
+define the problem the initiative is attempting to contribute to,
+discuss the range of solutions available and define which ones the
+initiative should pursue. In that sense the meeting was succefull
+and the objectives were achieved. 
+
+The discussions taken place gave raise to the definition of ``moderate
+data stock'', a major step to understand where the initiative pretends
+to contribute. The issue of introducing genetics in fisheries management
+was largely discussed and several clarifications were possible, as
+well as the identification of promising areas of convergence between
+fisheries modelling and genetics. Another issue to be grounded was
+the assessment model(s) to be explored, for which a set of characteristics
+were defined but leaving open the exact framework to be used. A step
+further was taken by designing the type of Management Strategies Evaluation
+the initiative will promote/develop as a standard advise methodology
+for these kind of stocks. In a more pragmatic setting the group loosely
+defined a simulation experiment to be carried out and a set of subjects
+to be tested. Additionaly the group discussed the a4a operationalization.
+
+
+\subsection{Moderate data stock}
+
+The group discussed the characteristics of a ``moderate data stock''
+in terms of data availability and concluded on the following definition.
+
+A moderate data stock has at least data on:
+\begin{itemize}
+\item nominal effort, 
+\item volume of catches in weight (which should include landings and discards), 
+\item length structure of the catches (which should include landings and
+discards),
+\item information based maturity ogive (parameters are not educated guesses
+but based on information),
+\item information based growth model (parameters are not educated guesses
+but based on information),
+\item length-weight relationship,
+\item index of abundance (the type of index is left open on purpose, it
+could be a survey or CPUE),
+\item length information for the index of abundance (based on selectivity
+studies or direct observations)
+\end{itemize}
+The length of the time series is not specified on pourpose, it will
+depend on the species' longevity, however it was generally accepted
+as a rule of thumb that it should cover at least one cohort {[}\textcolor{red}{!!==>\textcompwordmark{}>
+CHECK THIS, IT WAS NOT CLEARLY DISCUSSED DURING THE MEETING <\textcompwordmark{}<==!!}{]}. 
+
+
+\section{Genetics}
+\begin{itemize}
+\item population size
+
+\begin{itemize}
+\item effective population size
+
+\begin{itemize}
+\item Doesn't work well at yearly time scales 
+\end{itemize}
+\end{itemize}
+\item frequency of rare alleles 
+\item May work for endareged species 
+\item genetic diversity
+
+\begin{itemize}
+\item monitor specifi genes that are linked to specific biological functions 
+\end{itemize}
+\item indicators are still difficult to id and measure 
+\item May work for endareged species 
+\item reproductive success 
+\item IUU
+
+\begin{itemize}
+\item 30-50\% scale 
+\end{itemize}
+\item markers easy to compare between labs and reproducible 
+\item Monitor over time 
+\item Stock ID
+
+\begin{itemize}
+\item inout rates
+
+\begin{itemize}
+\item requires baselines 
+\end{itemize}
+\item \% of individuals 
+\end{itemize}
+\item Id biological representative characteristics 
+\item risk indicator
+
+\begin{itemize}
+\item time evolution of distribution may give indications of something \textquotedbl{}wrong\textquotedbl{}
+going on 
+\end{itemize}
+\item monitor specifi genes that are linked to specific biological functions 
+\item mixt stock analysis
+
+\begin{itemize}
+\item helps borrowing information between stocks 
+\end{itemize}
+\item rate of change of \textquotedbl{}fast\textquotedbl{} allele frequency 
+\item MSE
+
+\begin{itemize}
+\item What if we're exploring two pops with distinct biological characteristics
+
+\begin{itemize}
+\item that are id by genetics 
+\end{itemize}
+\item \%pop = HCR 
+\end{itemize}
+\item how robust if my HCR to breaking stock assessment assunmptions of
+closed population
+
+\begin{itemize}
+\item migration into fishery 
+\item migration into the SSB 
+\end{itemize}
+\end{itemize}
+
+\section{Biomass model/stock assessment model}
+\begin{itemize}
+\item Unscaled 
+\item Scaled
+
+\begin{itemize}
+\item Model to be applied rapidly to a wide range of situations 
+\item Results must be used for advise on a quantitative basis 
+\item surplus to get biomass and feed to length structure 
+\end{itemize}
+\item Referenced 
+\end{itemize}
+
+\section{Assessment/advise methodology}
+\begin{itemize}
+\item data moderate stock 
+\item Standard procedures to test assumptions and conditions and give advise 
+\item OM
+
+\begin{itemize}
+\item Biomass model/stock assessment model
+
+\begin{itemize}
+\item Unscaled 
+\item Scaled
+
+\begin{itemize}
+\item Model to be applied rapidly to a wide range of situations 
+\item Results must be used for advise on a quantitative basis 
+\item surplus to get biomass and feed to length structure 
+\end{itemize}
+\item Referenced 
+\end{itemize}
+\item A set of LH \& other bio/gen relevant factors
+
+\begin{itemize}
+\item Conditioning using LH to fill gaps and introduce variability on the
+OM 
+\item Set a protocol to define the range of OM based on LH (e.g. LH+ 1 sd
+etc) 
+\end{itemize}
+\end{itemize}
+\item MP
+
+\begin{itemize}
+\item A set of metric generators to HCR 
+\item A set of HCR
+
+\begin{itemize}
+\item Generic, multi-element, switch on/off 
+\end{itemize}
+\end{itemize}
+\item Which elements shoud constitute the standard 
+\item Presenting results 
+\item Statistic to include the uncertainty of the system
+
+\begin{itemize}
+\item B\_\{obs\}-B\_\{true\} \\
+accounts for observation and estimation error 
+\item (C\_\{after implementation\}/C\_\{from hcr\}) / (B\_\{true\}/B\_\{obs\})
+\\
+it could be interpreted as a measure of the trade-off between implementation
+error and observation-estimation error. Being close to 1 could be
+interpreted as errors being compensated and being able to manage “well”
+the system. The clear disadvantage is that it is not symmetric: goes
+in (0,1) in one side and (1,infinity) on the other.
+\end{itemize}
+\end{itemize}
+
+\section{Simulation experiment}
+\begin{itemize}
+\item Simulate data that fits the definition of moderate data
+
+\begin{itemize}
+\item Ask Daniel Howell for spatial data 
+\item gislasim 
+\item NOAA toolbox 
+\item Link with WGMG 
+\end{itemize}
+\item Use real data that fits the definition of moderate data
+
+\begin{itemize}
+\item conditional simulation of pop and fisheries and test assessment methods 
+\end{itemize}
+\item Id relevant elements that are subject for testing 
+\item Write MSE using the ICES HCR 
+\item Expand to more HCR
+
+\begin{itemize}
+\item HCR with parameter depending on objective 
+\end{itemize}
+\item Tests
+
+\begin{itemize}
+\item How the length of the time series impacts the results 
+\item How violation of assumptions or fixed parameters impact the results 
+\item What if we're exploring two pops with distinct biological characteristics
+that are id by genetics 
+\item \%pop = HCR 
+\item how robust if my HCR to breaking stock assessment assunmptions of
+closed population
+\item Test model complexity, does a BioDyn model works better than a structured
+model
+
+\begin{itemize}
+\item Will depend on the reliability of the abundance index 
+\end{itemize}
+\end{itemize}
+\end{itemize}
+
+\section{Operationalise}
+\begin{itemize}
+\item FLR 
+\item short time visits 
+\item scientific meetings 
+\item experts have some time for dev. and review during next year \end{itemize}
+
+\end{document}
