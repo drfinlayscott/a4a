@@ -1022,115 +1022,125 @@ Implementation
 Simulation experiment
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 Simulate data that fits the definition of moderate data
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Ask Daniel Howell for spatial data 
+\begin_layout Enumerate
+Ask Daniel Howell for spatial data,
 \end_layout
 
-\begin_layout Itemize
-gislasim 
+\begin_layout Enumerate
+Use FLR's 
+\begin_inset Quotes eld
+\end_inset
+
+gislasim
+\begin_inset Quotes erd
+\end_inset
+
+ method,
 \end_layout
 
-\begin_layout Itemize
-NOAA toolbox 
+\begin_layout Enumerate
+NOAA toolbox,
 \end_layout
 
-\begin_layout Itemize
-Link with WGMG 
+\begin_layout Enumerate
+Link with WGMG,
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
+\begin_layout Enumerate
 Use real data that fits the definition of moderate data
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-conditional simulation of pop and fisheries and test assessment methods
+\begin_layout Enumerate
+conditional simulation of population and fisheries and test assessment methods
  
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
+\begin_layout Enumerate
 Id relevant elements that are subject for testing 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 Write MSE using the ICES HCR 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 Expand to more HCR
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-HCR with parameter depending on objective 
+\begin_layout Enumerate
+HCR with parameter depending on objective, 
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
+\begin_layout Enumerate
 Tests
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
+\begin_layout Enumerate
 How the length of the time series impacts the results 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 How violation of assumptions or fixed parameters impact the results 
 \end_layout
 
-\begin_layout Itemize
-What if we're exploring two pops with distinct biological characteristics
- that are id by genetics 
-\end_layout
-
-\begin_layout Itemize
-%pop = HCR 
-\end_layout
-
-\begin_layout Itemize
-how robust if my HCR to breaking stock assessment assunmptions of closed
- population
-\end_layout
-
-\begin_layout Itemize
+\begin_layout Enumerate
 Test model complexity, does a BioDyn model works better than a structured
  model
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Will depend on the reliability of the abundance index 
+\begin_layout Enumerate
+What if there are two subpopulations with distinct biological characteristics
+ managed as a single stock;
 \end_layout
 
-\end_deeper
+\begin_layout Enumerate
+Which kind of HCR can be applied to a group of species based on knowledge
+ of their percentage on the catch; 
+\end_layout
+
+\begin_layout Enumerate
+How robust is the management procedure to departures from the closed population
+ stock assessment assumption.
+\end_layout
+
 \end_deeper
 \begin_layout Subsection
 Operational tools
 \end_layout
 
-\begin_layout Itemize
-FLR 
+\begin_layout Standard
+The participants all agreed to allocate some of their time to the initiative
+ progress.
+ In that regard it was discussed the possibility of organizaing a new meeting
+ next year and initiating a program of visiting scientists that would allow
+ more flexibility for other scientistds being involved.
+ For such program to work the JRC team will have to carry out most of the
+ work and plan with visitors the best timing so that the biggest advantage
+ can be taken of the period working together.
+ 
 \end_layout
 
-\begin_layout Itemize
-short time visits 
+\begin_layout Standard
+It was also agreed to use FLR (http://flr-project.org) as the main framework
+ for development.
 \end_layout
 
-\begin_layout Itemize
-scientific meetings 
-\end_layout
-
-\begin_layout Itemize
-experts have some time for dev.
- and review during next year 
+\begin_layout Standard
+There is also a budget for JRC scientists to participate on international
+ forum, which constitutes an important tool to disseminate the initiative
+ and cordinate with other groups.
+ 
 \end_layout
 
 \begin_layout Standard

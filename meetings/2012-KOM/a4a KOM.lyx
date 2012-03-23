@@ -932,20 +932,20 @@ Advise methodology
 \end_layout
 
 \begin_layout Standard
-The group discussed in depth the importance of having an advise methodology
- based on MSE for data moderated stocks.
- In general there was agreement that an MSE to be applied to a large number
- of stocks would require some sort of standardization, to limit the decisions
- required to proceed with the analysis and to make it possible to compare
- results across stocks.
+The group discussed the importance of having an advise methodology based
+ on MSE for data moderated stocks.
+ There was agreement that an MSE to be applied to a large number of stocks
+ would require some sort of standardization, to limit the decisions required
+ to proceed with the analysis and to make it possible to compare results
+ across stocks.
  
 \end_layout
 
 \begin_layout Standard
 Having a focus on the operating model, the MSE would be targeting the tests
  of the decisions made during conditioning and the management procedure
- would be as much as possible a startdard process, cloe to a protocol, to
- test the most relevant components of the operating model.
+ would be as much as possible a standard process, following a protocol,
+ to test the most relevant components of the operating model.
  Advise will be a product of that protocol.
  
 \end_layout
@@ -971,7 +971,7 @@ The MSE should be developed considering a set of standard procedures to
 \end_layout
 
 \begin_layout Standard
-Th epresentation of results is another area of interest.
+The presentation of results is another area of interest.
  There were discussions about the development of statistics that reflect
  the uncertainty of the full system.
  Two proposals were made:
@@ -981,16 +981,30 @@ Th epresentation of results is another area of interest.
 \begin_inset Formula $B_{OBS}-B_{TRUE}$
 \end_inset
 
- - or some transformation which accounts for observation and estimation
- error, 
+ - where 
+\begin_inset Formula $B_{OBS}$
+\end_inset
+
+ is the biomass estimated by the management procedure assessment model and
+ 
+\begin_inset Formula $B_{TRUE}$
+\end_inset
+
+ is the operating model biomass, this statistic accounts for observation
+ and estimation error; 
 \end_layout
 
 \begin_layout Itemize
 \begin_inset Formula $\frac{C_{TRUE}B_{OBS}}{B_{TRUE}C_{HCR}}=\frac{C_{TRUE}}{C_{HCR}}\left(\frac{B_{TRUE}}{B_{OBS}}\right)^{-1}$
 \end_inset
 
- - which could be interpreted as a measure of the trade-off between implementati
-on error and observation-estimation error.
+ - where 
+\begin_inset Formula $C_{HCR}$
+\end_inset
+
+ is the catch resulting from the HCR, this statistic could be interpreted
+ as a measure of the trade-off between implementation error and observation-esti
+mation error.
  Being close to 1 could be interpreted as errors being compensated and being
  able to manage “well” the system.
  The clear disadvantage is that it is not symmetric: goes in (0,1) in one
