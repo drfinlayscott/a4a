@@ -531,7 +531,7 @@ Leire Ibarriaga
 \begin_inset Text
 
 \begin_layout Plain Layout
-AZTI Technalia (SP)
+AZTI Tecnalia (ES)
 \end_layout
 
 \end_inset
@@ -589,7 +589,7 @@ Ruben Roa
 \begin_inset Text
 
 \begin_layout Plain Layout
-AZTI Technalia (SP)
+AZTI Tecnalia (ES)
 \end_layout
 
 \end_inset
@@ -614,7 +614,7 @@ An introduction to the subject was done by Ernesto Jardim to open the meeting,
  south hemisphere initiative on MSE report was presented by Iago Mosqueira,
  the GFCM workshop on Elasmobranchs was presented by Chato Osio and Andrew
  Cooper presented the management system implemented in the USA after the
- revision of the Stevenson-Magnunsson act.
+ revision of the Magnuson-Stevens act.
  All these presentations are available on the a4a repository in github.
 \end_layout
 
@@ -697,6 +697,10 @@ Model to be applied rapidly to a wide range of situations
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Conceptual framework
 \end_layout
 
 \begin_layout Subsection
@@ -845,270 +849,298 @@ Time resolution is a major problem with genetic indicators which in most
 \end_layout
 
 \begin_layout Subsection
-Biomass model/stock assessment model
+Stock assessment model
 \end_layout
 
 \begin_layout Standard
-The assessment model has to be applied rapidly to a wide range of situations
- and provide quantitative results of abundance and fishing mortality.
- To achieve such objectives the model should not rely on human decisions
- and be adjusted as automatic as possible.
+To help with the discussions about the possible development of a stock assessmen
+t model two essential questions were discussed and clarified.
+\end_layout
+
+\begin_layout Standard
+The stock assessment models were classified with relation to their abundance
+ estimation characteristics as: 
+\end_layout
+
+\begin_layout Enumerate
+unscaled - biomass is not well estimated but trends in biomass are relieable
+ enough for management ;
+\end_layout
+
+\begin_layout Enumerate
+scaled - biomass is well estimated but it's not possible to identify where
+ the stock is with relation to the its productivity;
+\end_layout
+
+\begin_layout Enumerate
+referenced - biomass is well estimated as well as the position of biomass
+ relative to its productivity.
+\end_layout
+
+\begin_layout Standard
+Two distinct processes to be carried out using assessment models were considered
+, each requiring distinct characteristics: 
+\end_layout
+
+\begin_layout Enumerate
+conditioning of the operating model - the assessment model must be as precise
+ as possible, make use of all information available and provide estimates
+ of the parameters' uncertainty; 
+\end_layout
+
+\begin_layout Enumerate
+within the management procedure - the assessment model is a metric generator
+ for the HCR, as simple and robust as possible, not neccessarely providing
+ estimates of parameters' uncertainty.
  
 \end_layout
 
 \begin_layout Standard
-A simplified version may be used in the context of MSE, to inform the HCR
- during the management procedure.
- In fact there are two distinct processes that require an assessment model,
- each with distinct characteristics.
- The stock assessment model to condition the operating model must be as
- precise as possible, make use of all information available and provide
- estimates of the parameters uncertainty, while the stock assessment model
- to be used in the management procedure should be seen as a metric generator
- for the HCR, as simple and robust as possible, not neccessarely providing
- estimates of parameters' uncertainty.
+Taking into account the descriptions above the group considered that the
+ development of a stock assessment model should aim for a 
+\begin_inset Quotes eld
+\end_inset
+
+scaled
+\begin_inset Quotes erd
+\end_inset
+
+ model and focus on the conditioning of the operating model as its most
+ relevant outcome.
+ There will be the possibility of using a simplified version to inform the
+ HCR during the management procedure.
+ 
+\end_layout
+
+\begin_layout Standard
+Additionaly, the assessment model must allow its rapid application to a
+ wide range of situations.
+ To achieve such objectives the model should be adjusted as automatic and
+ precise as possible to reduce or avoid the need for complex human decisions.
+ 
 \end_layout
 
 \begin_layout Standard
 The model should be based on existing models, avoid unneccessary complexity
  and implemented in FLR.
  One of the primary tasks of the initiative will be to test the assumptions
- of the model and derive it's characteristics.
+ of the model and derive it's characteristics in terms of robustness ...
 \end_layout
 
 \begin_layout Subsection
-Assessment/advise methodology
+Advise methodology
+\end_layout
+
+\begin_layout Standard
+The group discussed in depth the importance of having an advise methodology
+ based on MSE for data moderated stocks.
+ In general there was agreement that an MSE to be applied to a large number
+ of stocks would require some sort of standardization, to limit the decisions
+ required to proceed with the analysis and to make it possible to compare
+ results across stocks.
+ 
+\end_layout
+
+\begin_layout Standard
+Having a focus on the operating model, the MSE would be targeting the tests
+ of the decisions made during conditioning and the management procedure
+ would be as much as possible a startdard process, cloe to a protocol, to
+ test the most relevant components of the operating model.
+ Advise will be a product of that protocol.
+ 
+\end_layout
+
+\begin_layout Standard
+In such framework it will be neccessary to define the MSE elements that
+ will be subject to testing and which ones will be subject to assumptions.
+ For example, regarding the assessment model for the HCR the protocol can
+ state that a biomass dynamic model and a statistical catch at age must
+ be used so that some model mis-specification can be dealt with.
+\end_layout
+
+\begin_layout Standard
+The MSE should be developed considering a set of standard procedures to
+ test assumptions and conditions with regards to the robustness of the advise.
+ In that sense the initiative should aim for defining a standard procedure
+ for data moderate stocks by setting protocols for the most important elements
+ of the MSE, like conditioning the operating model, e.g.
+ using LH to fill gaps or define the range of OM based on LH (e.g.
+ LH+ 1 sd etc), defining the HCR that should be tested, defining the assessmentg
+ models that should be considered, defining the minimum elements of the
+ MSE for moderate data stocks, how to present results, etc.
+\end_layout
+
+\begin_layout Standard
+Th epresentation of results is another area of interest.
+ There were discussions about the development of statistics that reflect
+ the uncertainty of the full system.
+ Two proposals were made:
 \end_layout
 
 \begin_layout Itemize
-data moderate stock 
-\end_layout
-
-\begin_layout Itemize
-Standard procedures to test assumptions and conditions and give advise 
-\end_layout
-
-\begin_layout Itemize
-OM
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Biomass model/stock assessment model
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Unscaled 
-\end_layout
-
-\begin_layout Itemize
-Scaled
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Model to be applied rapidly to a wide range of situations 
-\end_layout
-
-\begin_layout Itemize
-Results must be used for advise on a quantitative basis 
-\end_layout
-
-\begin_layout Itemize
-surplus to get biomass and feed to length structure 
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Referenced 
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-A set of LH & other bio/gen relevant factors
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Conditioning using LH to fill gaps and introduce variability on the OM 
-\end_layout
-
-\begin_layout Itemize
-Set a protocol to define the range of OM based on LH (e.g.
- LH+ 1 sd etc) 
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Itemize
-MP
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-A set of metric generators to HCR 
-\end_layout
-
-\begin_layout Itemize
-A set of HCR
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Generic, multi-element, switch on/off 
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Itemize
-Which elements shoud constitute the standard 
-\end_layout
-
-\begin_layout Itemize
-Presenting results 
-\end_layout
-
-\begin_layout Itemize
-Statistic to include the uncertainty of the system
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-B_{obs}-B_{true} 
-\begin_inset Newline newline
+\begin_inset Formula $B_{OBS}-B_{TRUE}$
 \end_inset
 
-accounts for observation and estimation error 
+ - or some transformation which accounts for observation and estimation
+ error, 
 \end_layout
 
 \begin_layout Itemize
-(C_{after implementation}/C_{from hcr}) / (B_{true}/B_{obs}) 
-\begin_inset Newline newline
+\begin_inset Formula $\frac{C_{TRUE}B_{OBS}}{B_{TRUE}C_{HCR}}=\frac{C_{TRUE}}{C_{HCR}}\left(\frac{B_{TRUE}}{B_{OBS}}\right)^{-1}$
 \end_inset
 
-it could be interpreted as a measure of the trade-off between implementation
- error and observation-estimation error.
+ - which could be interpreted as a measure of the trade-off between implementati
+on error and observation-estimation error.
  Being close to 1 could be interpreted as errors being compensated and being
  able to manage “well” the system.
  The clear disadvantage is that it is not symmetric: goes in (0,1) in one
  side and (1,infinity) on the other.
 \end_layout
 
-\end_deeper
+\begin_layout Standard
+After the meeting some suggestions on the visual representation of the results
+ were discussed, in particular the usage of dashboards, which allow the
+ representation of distinct levels of detail in the same 
+\begin_inset Quotes eld
+\end_inset
+
+plot
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Such representation could help stakeholders and scientists to explore and
+ better understand MSE results.
+ 
+\end_layout
+
 \begin_layout Section
+Implementation
+\end_layout
+
+\begin_layout Subsection
 Simulation experiment
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 Simulate data that fits the definition of moderate data
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Ask Daniel Howell for spatial data 
+\begin_layout Enumerate
+Ask Daniel Howell for spatial data,
 \end_layout
 
-\begin_layout Itemize
-gislasim 
+\begin_layout Enumerate
+Use FLR's 
+\begin_inset Quotes eld
+\end_inset
+
+gislasim
+\begin_inset Quotes erd
+\end_inset
+
+ method,
 \end_layout
 
-\begin_layout Itemize
-NOAA toolbox 
+\begin_layout Enumerate
+NOAA toolbox,
 \end_layout
 
-\begin_layout Itemize
-Link with WGMG 
+\begin_layout Enumerate
+Link with WGMG,
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
+\begin_layout Enumerate
 Use real data that fits the definition of moderate data
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-conditional simulation of pop and fisheries and test assessment methods
+\begin_layout Enumerate
+conditional simulation of population and fisheries and test assessment methods
  
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
+\begin_layout Enumerate
 Id relevant elements that are subject for testing 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 Write MSE using the ICES HCR 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 Expand to more HCR
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-HCR with parameter depending on objective 
+\begin_layout Enumerate
+HCR with parameter depending on objective, 
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
+\begin_layout Enumerate
 Tests
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
+\begin_layout Enumerate
 How the length of the time series impacts the results 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 How violation of assumptions or fixed parameters impact the results 
 \end_layout
 
-\begin_layout Itemize
-What if we're exploring two pops with distinct biological characteristics
- that are id by genetics 
-\end_layout
-
-\begin_layout Itemize
-%pop = HCR 
-\end_layout
-
-\begin_layout Itemize
-how robust if my HCR to breaking stock assessment assunmptions of closed
- population
-\end_layout
-
-\begin_layout Itemize
+\begin_layout Enumerate
 Test model complexity, does a BioDyn model works better than a structured
  model
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Will depend on the reliability of the abundance index 
+\begin_layout Enumerate
+What if there are two subpopulations with distinct biological characteristics
+ managed as a single stock;
+\end_layout
+
+\begin_layout Enumerate
+Which kind of HCR can be applied to a group of species based on knowledge
+ of their percentage on the catch; 
+\end_layout
+
+\begin_layout Enumerate
+How robust is the management procedure to departures from the closed population
+ stock assessment assumption.
 \end_layout
 
 \end_deeper
-\end_deeper
-\begin_layout Section
-Operationalisation
+\begin_layout Subsection
+Operational tools
 \end_layout
 
-\begin_layout Itemize
-FLR 
+\begin_layout Standard
+The participants all agreed to allocate some of their time to the initiative
+ progress.
+ In that regard it was discussed the possibility of organizaing a new meeting
+ next year and initiating a program of visiting scientists that would allow
+ more flexibility for other scientistds being involved.
+ For such program to work the JRC team will have to carry out most of the
+ work and plan with visitors the best timing so that the biggest advantage
+ can be taken of the period working together.
+ 
 \end_layout
 
-\begin_layout Itemize
-short time visits 
+\begin_layout Standard
+It was also agreed to use FLR (http://flr-project.org) as the main framework
+ for development.
 \end_layout
 
-\begin_layout Itemize
-scientific meetings 
-\end_layout
-
-\begin_layout Itemize
-experts have some time for dev.
- and review during next year 
+\begin_layout Standard
+There is also a budget for JRC scientists to participate on international
+ forum, which constitutes an important tool to disseminate the initiative
+ and cordinate with other groups.
+ 
 \end_layout
 
 \begin_layout Standard
