@@ -1,0 +1,1305 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage[english]{babel}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{hhline}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding T1
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+a4a kick-off meeting report
+\begin_inset Newline newline
+\end_inset
+
+28th February to 2nd March, 2012
+\begin_inset Newline newline
+\end_inset
+
+JRC, Ispra, Italy 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename img-1.jpg
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+The implementation of the 2009 revision of the DCF
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Data Collection Framework (2008/949/EC)
+\end_layout
+
+\end_inset
+
+ generated the obligation to collect a large amount of information for all
+ stocks being subject to fisheries exploitation.
+ Based on the regulation there are 250+ stocks for which some kind of biological
+ information must be collected.
+ Most of these stocks will have in the future, 
+\begin_inset Formula $\sim$
+\end_inset
+
+2020, time series of exploitation data more than 10 years long, although
+ the information about the biology will most likely be limited due to the
+ logistics of processing all the samples collected.
+ These stocks (will) have a moderate amount of information and won't fit
+ into the "data poor" stock definition.
+ In addition, due to the large number of these stocks it is not logistically
+ feasible to run complex data eager models that require a high level of
+ expertise to run and analyse.
+ What is required is a robust methodology that allows the assessments of
+ a large number of stocks by non-expert modellers.
+ 
+\end_layout
+
+\begin_layout Standard
+Having stock assessment and advisory methods to apply to a large number
+ of moderate data stocks, raise interesting challenges and creates opportunities
+ worth exploring.
+ For example, approaching stock assessment as a data generating engine,
+ having a common stock assessment methodology or analysing massive stock
+ assessment results, open the possibility of issuing advise for more species
+ in a multifleet, multispecies framework and promotes comparative advise
+ analysis.
+ 
+\end_layout
+
+\begin_layout Standard
+As scientists it is important to think ahead and start developing such methodolo
+gies.
+ JRC following it's mission of antecipating policy implementation issues
+ decided to move forward with the 
+\begin_inset Quotes eld
+\end_inset
+
+Assessment for All
+\begin_inset Quotes erd
+\end_inset
+
+ (a4a) initiative, aiming to: 
+\end_layout
+
+\begin_layout Enumerate
+develop an assessment method targeting stocks that have a reduced knowledge
+ base on biology and moderate time series on exploitation and abundance;
+ 
+\end_layout
+
+\begin_layout Enumerate
+trigger the discussion about the problem of massive stock assessment;
+\end_layout
+
+\begin_layout Enumerate
+build capacity on stock assessment and fisheries management advise.
+\end_layout
+
+\begin_layout Standard
+The initiative has a web repository where all the presentations, reports,
+ code and data can be found
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+https://github.com/ejardim/a4a
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Objectives and organization
+\end_layout
+
+\begin_layout Standard
+The kick-off meeting of the initiative took place between 29/February and
+ 02/March of 2012 at the JRC head quarters in Varese, Italy, chaired by
+ Ernesto Jardim (JRC/EC), with the following terms of reference:
+\end_layout
+
+\begin_layout Enumerate
+world wide needs of fisheries advice; 
+\end_layout
+
+\begin_layout Enumerate
+available stock assessment methods; 
+\end_layout
+
+\begin_layout Enumerate
+ways to make stock assessment in the context of management advise more robust;
+ 
+\end_layout
+
+\begin_layout Enumerate
+identify modules to build a MSE; 
+\end_layout
+
+\begin_layout Enumerate
+discuss progress of the initiative.
+ 
+\end_layout
+
+\begin_layout Standard
+The agenda of the meeting is in the annex.
+\end_layout
+
+\begin_layout Subsection
+Participation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="13" columns="3">
+<features tabularvalignment="middle">
+<column alignment="right" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Affiliation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Andrew Cooper
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Simon Fraser University (CA)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chato Osio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Joint Research Center (EC)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Einar Nielsen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Danish Technical University (DK)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ernesto Jardim (chair)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Joint Research Center (EC)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Finlay Scott
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Centre for Environment, Fisheries & Aquaculture Science (UK)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gary Carvalho
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bangor University (UK)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Iago Mosqueira
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Joint Research Center (EC)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jann Marthinson
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Joint Research Center (EC)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Jose de Oliveira
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Centre for Environment, Fisheries & Aquaculture Science (UK)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Leire Ibarriaga
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AZTI Tecnalia (ES)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Manuela Azevedo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Portuguese Institute for Sea and Atmosphere (PT)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ruben Roa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AZTI Tecnalia (ES)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Background information
+\end_layout
+
+\begin_layout Standard
+An introduction to the subject was done by Ernesto Jardim to open the meeting,
+ followed by a set of presentations of reports and other initiatives, that
+ contributed to the progress of the work.
+ Manuela Azevedo presented the recent outcomes of the ICES WKLIFE (), the
+ south hemisphere initiative on MSE report was presented by Iago Mosqueira,
+ the GFCM workshop on Elasmobranchs was presented by Chato Osio and Andrew
+ Cooper presented the management system implemented in the USA after the
+ revision of the Magnuson-Stevens act.
+ All these presentations are available on the a4a repository in github.
+\end_layout
+
+\begin_layout Section
+Outcomes
+\end_layout
+
+\begin_layout Standard
+The ToR and agenda were followed loosely to allow for discussions and brain
+ storming.
+ 
+\end_layout
+
+\begin_layout Standard
+The overall objective was to consolidate ideas regarding the initiative's
+ aims, expectations and opeartionalization.
+ It was critical to better define the problem the initiative is attempting
+ to contribute to, discuss the range of solutions available and define which
+ ones the initiative should pursue.
+ In that sense the meeting was succefull and the objectives were achieved.
+ 
+\end_layout
+
+\begin_layout Standard
+The discussions gave rise to the definition of a 
+\begin_inset Quotes eld
+\end_inset
+
+moderate data stock
+\begin_inset Quotes erd
+\end_inset
+
+, a major step to understand where the initiative intends to contribute.
+ The issue of introducing genetics in fisheries management was discussed
+ and several clarifications were made, as well as the identification of
+ promising areas of convergence between fisheries modelling and genetics.
+ Another issue to be grounded was the assessment model(s) to be explored,
+ for which a set of characteristics were defined while leaving open the
+ exact framework to be used.
+ A further step was taken by designing the type of Management Strategies
+ Evaluation the initiative will promote/develop as a standard advise methodology
+ for these kind of stocks.
+ In a more pragmatic setting the group loosely defined a simulation experiment
+ to be carried out and a set of subjects to be tested.
+ Additionally the group discussed the a4a operationalization.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+Industrial process instead of an art
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Automatic stock assessment model
+\end_layout
+
+\begin_layout Itemize
+In the sense of adjusting the model during the MP 
+\end_layout
+
+\begin_layout Itemize
+Not including the moment of conditioning the OM, which requires the best
+ adjustement 
+\end_layout
+
+\begin_layout Itemize
+The performance of the model is evaluated during the projections 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Massive data 
+\end_layout
+
+\begin_layout Itemize
+Model to be applied rapidly to a wide range of situations 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conceptual framework
+\end_layout
+
+\begin_layout Subsection
+Moderate data stock
+\end_layout
+
+\begin_layout Standard
+The group discussed the characteristics of a 
+\begin_inset Quotes eld
+\end_inset
+
+moderate data stock
+\begin_inset Quotes erd
+\end_inset
+
+ in terms of data availability and concluded on the following definition.
+\end_layout
+
+\begin_layout Standard
+A moderate data stock has at least data on:
+\end_layout
+
+\begin_layout Itemize
+nominal effort, 
+\end_layout
+
+\begin_layout Itemize
+volume of catches in weight (which should include landings and discards),
+ 
+\end_layout
+
+\begin_layout Itemize
+length information for the catches (based on selectivity studies or direct
+ observations),
+\end_layout
+
+\begin_layout Itemize
+information based maturity ogive (parameters are not educated guesses but
+ based on information),
+\end_layout
+
+\begin_layout Itemize
+information based growth model (parameters are not educated guesses but
+ based on information),
+\end_layout
+
+\begin_layout Itemize
+length-weight relationship,
+\end_layout
+
+\begin_layout Itemize
+index of abundance (the type of index is left open on purpose, it could
+ be a survey or CPUE),
+\end_layout
+
+\begin_layout Itemize
+length information for the index of abundance (based on selectivity studies
+ or direct observations)
+\end_layout
+
+\begin_layout Standard
+The length of the time series is not specified on purpose, it will depend
+ on the species' longevity.
+ 
+\end_layout
+
+\begin_layout Subsection
+Genetics
+\end_layout
+
+\begin_layout Standard
+While there is general agreement that genetic approaches can support fisheries
+ management relevant issues, a clear need persists to clarify how and where
+ exactly genetic analysis could contribute to fisheries management advise
+ and stock dynamics modelling, particularly when applied in a routine context.
+ 
+\end_layout
+
+\begin_layout Standard
+To start with, a clear distinction must be made between the usage of genetics
+ for control and enforcement, like determining the origin of individuals
+ or species/stock mis-identification, and the usage of genetic indicators
+ or metrics for modelling purposes, which was the aim pursued in this meeting.
+ 
+\end_layout
+
+\begin_layout Standard
+The discussions focused on three distinct themes: stock identification,
+ risk indicators, and total biomass/abundance estimation.
+ 
+\end_layout
+
+\begin_layout Standard
+Stock identification is the most promising area of convergence, and the
+ application of genetics for this purpose seems most readily available as
+ a routine approach in fisheries management: there exist already a number
+ of examples where genetic stock identification (GSI) is used and the genetic
+ analysis applied is robust and relatively easy to perform.
+ When applying GSI, the major effort arises through the need to establish
+ a baseline, which depends on finding the allele composition that separate
+ the stocks/populations/groups.
+ Better definitions of stock boundaries, estimates of migration rates, Harvest
+ Control Rules (HCRs) based on the percentage of certain groups on the catch,
+ etc, can all be plugged into stock dynamics modelling or management procedures
+ simulations.
+ Following these ideas the group discussed and suggested a non-exhaustive
+ set of questions that could be tested on a MSE framework: 
+\end_layout
+
+\begin_layout Itemize
+What if there are two subpopulations with distinct biological characteristics
+ managed as a single stock; 
+\end_layout
+
+\begin_layout Itemize
+Which kind of HCR can be applied to a group of species based on knowledge
+ of their percentage on the catch;
+\end_layout
+
+\begin_layout Itemize
+How robust is the management procedure to departures from the closed population
+ stock assessment assumption.
+ 
+\end_layout
+
+\begin_layout Standard
+Risk indicators were the next subject that the group considered promising.
+ If specific indicators, e.g.
+ linked to specific biological functions like reproduction, are monitored
+ over time, this might provide indications, giving an alert that something
+ "wrong" is going on.
+ Genetic diversity and frequency of rare alleles are examples of such indicators
+, which still require further work and development to fully assess their
+ usage.
+ Such an approach would require on-the-fly analysis and computations.
+ 
+\end_layout
+
+\begin_layout Standard
+With regards to estimations or proxies of stock biomass/abundance it became
+ clear that genetics cannot help.
+ The genetic concept of population size, and the so-called “effective population
+ size”, is very distinct and the relation between the genetic population
+ size and abundance (number of individuals in the population) is similar
+ to an exponential decay model where most abundance variability lies in
+ the model's flat bottom (EINER AND ANDREW CAN YOU PLEASE CHECK THIS).
+ For the time being pursuing this path, in the context of a4a, was considered
+ futile, despite of a wide number of potential applications that could be
+ envisioned.
+ 
+\end_layout
+
+\begin_layout Standard
+Time resolution is a major problem when using genetic indicators, as in
+ most cases they appear to be stable at a multi-annual scale.
+ For stock and fisheries dynamics modelling this time frame is too wide.
+ 
+\end_layout
+
+\begin_layout Standard
+Generally, Single Nucleotide Polymorphisms (SNPs), particular genetic markers,
+ are highly amenable to high throughput analytical techniques, easily comparable
+ between laboratories and produce robust and reproducible results.
+\end_layout
+
+\begin_layout Subsection
+Stock assessment model
+\end_layout
+
+\begin_layout Standard
+To help with the discussions about the possible development of a stock assessmen
+t model two essential questions were discussed and clarified.
+\end_layout
+
+\begin_layout Standard
+The stock assessment models were classified with relation to their abundance
+ estimation characteristics as: 
+\end_layout
+
+\begin_layout Enumerate
+unscaled - biomass is not well estimated but trends in biomass are relieable
+ enough for management ;
+\end_layout
+
+\begin_layout Enumerate
+scaled - biomass is well estimated but it's not possible to identify where
+ the stock is with relation to the its productivity;
+\end_layout
+
+\begin_layout Enumerate
+referenced - biomass is well estimated as well as the position of biomass
+ relative to its productivity.
+\end_layout
+
+\begin_layout Standard
+Two distinct processes to be carried out using assessment models were considered
+, each requiring distinct characteristics: 
+\end_layout
+
+\begin_layout Enumerate
+conditioning of the operating model - the assessment model must be as precise
+ as possible, make use of all information available and provide estimates
+ of the parameters' uncertainty; 
+\end_layout
+
+\begin_layout Enumerate
+within the management procedure - the assessment model is a metric generator
+ for the HCR, as simple and robust as possible, not neccessarely providing
+ estimates of parameters' uncertainty.
+ 
+\end_layout
+
+\begin_layout Standard
+Taking into account the descriptions above the group considered that the
+ development of a stock assessment model should aim for a 
+\begin_inset Quotes eld
+\end_inset
+
+scaled
+\begin_inset Quotes erd
+\end_inset
+
+ model and focus on the conditioning of the operating model as its most
+ relevant outcome.
+ There will be the possibility of using a simplified version to inform the
+ HCR during the management procedure.
+ 
+\end_layout
+
+\begin_layout Standard
+Additionaly, the assessment model must allow its rapid application to a
+ wide range of situations.
+ To achieve such objectives the model should be adjusted as automatic and
+ precise as possible to reduce or avoid the need for complex human decisions.
+ 
+\end_layout
+
+\begin_layout Standard
+The model should be based on existing models, avoid unneccessary complexity
+ and implemented in FLR.
+ One of the primary tasks of the initiative will be to test the assumptions
+ of the model and derive it's characteristics in terms of robustness ...
+\end_layout
+
+\begin_layout Subsection
+Advise methodology
+\end_layout
+
+\begin_layout Standard
+The group discussed the importance of having an advise methodology based
+ on MSE for data moderated stocks.
+ There was agreement that an MSE to be applied to a large number of stocks
+ would require some sort of standardization, to limit the decisions required
+ to proceed with the analysis and to make it possible to compare results
+ across stocks.
+ 
+\end_layout
+
+\begin_layout Standard
+Having a focus on the operating model, the MSE would be targeting the tests
+ of the decisions made during conditioning and the management procedure
+ would be as much as possible a standard process, following a protocol,
+ to test the most relevant components of the operating model.
+ Advise will be a product of that protocol.
+ 
+\end_layout
+
+\begin_layout Standard
+In such framework it will be neccessary to define the MSE elements that
+ will be subject to testing and which ones will be subject to assumptions.
+ For example, regarding the assessment model for the HCR the protocol can
+ state that a biomass dynamic model and a statistical catch at age must
+ be used so that some model mis-specification can be dealt with.
+\end_layout
+
+\begin_layout Standard
+The MSE should be developed considering a set of standard procedures to
+ test assumptions and conditions with regards to the robustness of the advise.
+ In that sense the initiative should aim for defining a standard procedure
+ for data moderate stocks by setting protocols for the most important elements
+ of the MSE, like conditioning the operating model, e.g.
+ using LH to fill gaps or define the range of OM based on LH (e.g.
+ LH+ 1 sd etc), defining the HCR that should be tested, defining the assessmentg
+ models that should be considered, defining the minimum elements of the
+ MSE for moderate data stocks, how to present results, etc.
+\end_layout
+
+\begin_layout Standard
+The presentation of results is another area of interest.
+ There were discussions about the development of statistics that reflect
+ the uncertainty of the full system.
+ Two proposals were made:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $B_{OBS}-B_{TRUE}$
+\end_inset
+
+ - where 
+\begin_inset Formula $B_{OBS}$
+\end_inset
+
+ is the biomass estimated by the management procedure assessment model and
+ 
+\begin_inset Formula $B_{TRUE}$
+\end_inset
+
+ is the operating model biomass, this statistic accounts for observation
+ and estimation error; 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\frac{C_{TRUE}B_{OBS}}{B_{TRUE}C_{HCR}}=\frac{C_{TRUE}}{C_{HCR}}\left(\frac{B_{TRUE}}{B_{OBS}}\right)^{-1}$
+\end_inset
+
+ - where 
+\begin_inset Formula $C_{HCR}$
+\end_inset
+
+ is the catch resulting from the HCR, this statistic could be interpreted
+ as a measure of the trade-off between implementation error and observation-esti
+mation error.
+ Being close to 1 could be interpreted as errors being compensated and being
+ able to manage “well” the system.
+ The clear disadvantage is that it is not symmetric: goes in (0,1) in one
+ side and (1,infinity) on the other.
+\end_layout
+
+\begin_layout Standard
+After the meeting some suggestions on the visual representation of the results
+ were discussed, in particular the usage of dashboards, which allow the
+ representation of distinct levels of detail in the same 
+\begin_inset Quotes eld
+\end_inset
+
+plot
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Such representation could help stakeholders and scientists to explore and
+ better understand MSE results.
+ 
+\end_layout
+
+\begin_layout Section
+Implementation
+\end_layout
+
+\begin_layout Subsection
+Simulation experiment
+\end_layout
+
+\begin_layout Standard
+The group discussed simulation experiments that could be used to test models
+ and algorithms discussed above.
+ The steps are described below: 
+\end_layout
+
+\begin_layout Enumerate
+Simulate data that fits the definition of moderate data;
+\end_layout
+
+\begin_layout Enumerate
+Use real data that fits the definition of moderate data;
+\end_layout
+
+\begin_layout Enumerate
+Develop/compile candidate stock assessment models for moderate data stocks
+ (conditioning);
+\end_layout
+
+\begin_layout Enumerate
+Tests:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+When estimating stock dynamics and fishing mortality for data limited stocks,
+ which elements are more difficult to estimate considering distinct exploitation
+ histories and life history parameters;
+\end_layout
+
+\begin_layout Enumerate
+How the time series length impacts the estimation of stock dynamics and
+ fishing mortality for data limited stocks; 
+\end_layout
+
+\begin_layout Enumerate
+How fixed parameters impact the results (sensitivity analysis) considering
+ distinct exploitation histories and life history parameters; 
+\end_layout
+
+\begin_layout Enumerate
+etc
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Write MSE using the ICES HCR;
+\end_layout
+
+\begin_layout Enumerate
+Expand tests o include management impact of:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+MP model complexity;
+\end_layout
+
+\begin_layout Enumerate
+two subpopulations with distinct biological characteristics being managed
+ as a single stock;
+\end_layout
+
+\begin_layout Enumerate
+departures from the closed population stock assessment assumption;
+\end_layout
+
+\begin_layout Enumerate
+etc
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Expand HCR.
+\end_layout
+
+\begin_layout Subsection
+Operational tools
+\end_layout
+
+\begin_layout Standard
+All participants agreed to allocate some of their time to the initiative.
+ In that regard it was discussed the possibility of organizing a new meeting
+ next year and initiating a program of visiting scientists, that would allow
+ more flexibility.
+ For such program to work the JRC team will have to carry out most of the
+ work and plan with visitors the best timing so that the biggest advantage
+ can be taken of the period working together.
+ 
+\end_layout
+
+\begin_layout Standard
+It was also agreed to use FLR (http://flr-project.org) as the main framework
+ for development.
+\end_layout
+
+\begin_layout Standard
+There is also a budget for JRC scientists to participate on international
+ forum, which constitutes an important tool to disseminate the initiative
+ and cordinate with other groups.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Annex 01
+\begin_inset Newline newline
+\end_inset
+
+Agenda
+\end_layout
+
+\begin_layout Itemize
+Wednesday
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Introduction (E.Jardim)
+\end_layout
+
+\begin_layout Itemize
+Identify and describe the problem
+\end_layout
+
+\begin_layout Itemize
+Summary of WKLIFE (M.Azevedo)
+\end_layout
+
+\begin_layout Itemize
+Summary of south hemisphere initiative report (I.Mosqueira)
+\end_layout
+
+\begin_layout Itemize
+Summary of GFCM WK on Elasmobranchs (G.Chato)
+\end_layout
+
+\begin_layout Itemize
+Management of a selection of stocks from N.America (A.Cooper)
+\end_layout
+
+\begin_layout Itemize
+Discussion
+\end_layout
+
+\begin_layout Itemize
+Compile a set of possible solutions to the problem
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Thursday
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Seminar to JRC on Fisheries Modelling (09:30 – 11:00)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Welcome message by Alessandra Zampieri (JRC HoU)
+\end_layout
+
+\begin_layout Itemize
+MSE by Jose de Oliveira (CEFAS)
+\end_layout
+
+\begin_layout Itemize
+Catch Dynamic Model by Ruben Roa (AZTI)
+\end_layout
+
+\begin_layout Itemize
+Genetics and quantitative fisheries by Gary Carvalho (B.U.) & Heiner Nielsen
+ (DTU-AQUA)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Elaborate on advantages and disadvantages of each solution
+\end_layout
+
+\begin_layout Itemize
+Revisit the solutions and decide which are the most promising
+\end_layout
+
+\begin_layout Itemize
+Agree on a framework for testing: MSE, statistical analysis, simulated data,
+ etc.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Friday
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Discuss implementation and testing of the best solutions
+\end_layout
+
+\begin_layout Itemize
+Elaborate on the expected outcome
+\end_layout
+
+\begin_layout Itemize
+Challenges and opportunities
+\end_layout
+
+\begin_layout Itemize
+Workplan
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
