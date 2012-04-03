@@ -13,6 +13,8 @@
 #	Sa = linear up to full exploited age, 1 afterwards
 #	Isel = q*sel
 #	selq = sel0*exp(-beta*t) - exponential decay
+#
+# testing
 ###############################################################################
 
 #==============================================================================
