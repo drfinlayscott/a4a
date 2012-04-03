@@ -13,8 +13,6 @@
 #	Sa = linear up to full exploited age, 1 afterwards
 #	Isel = q*sel
 #	selq = sel0*exp(-beta*t) - exponential decay
-#
-# testing
 ###############################################################################
 
 #==============================================================================
@@ -120,5 +118,7 @@ setMethod("a4a8", c("FLStock", "FLIndex"),
 		DEoptim(fobj7, flqini=flqini, flcini=flcini, Cayobs=Cayobs, Iayobs=Iayobs, May=May, Cminage=Cminage, Cmaxage=Cmaxage, Cnages=Cnages, Cnyrs=Cnyrs, Cageidx=Cageidx, Cyrsidx=Cyrsidx, Imaxage=Imaxage, Iminage=Iminage, Iageidx=Iageidx, Ichtidx=Ichtidx, lower=low, upper=upp, control=DEoptim.control(strategy=6, c=0.4, trace=FALSE)) 
 	}
 )
+
+
 
 
