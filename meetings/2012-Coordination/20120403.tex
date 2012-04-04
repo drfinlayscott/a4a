@@ -1,0 +1,50 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\begin{document}
+\title{a4a coordination meeting}
+\date{2012.04.03@Fishreg}
+\author{Ernesto Jardim}
+\maketitle
+\section{Introduction}
+A number of issues required our attention and some planning. We need to progress or we may lose the momentum and end up not delivering anything except a bunch of ideas.
+
+The meeting was attended by Chato, Colin, Iago and Ernesto.
+
+\section{2012 Plan}
+The activities for 2012 are categorized in Invitations, Meetings, Courses, and Contracts. Regarding invitations we have already invited Henrik Gislason (DTU) and Richard Hillary (CSIRO). There's contacts with Steve Cadrin and Sidney Holt. There's another 2 invitations tha may realize. In summary we may have 4 invitations, taken around 10 days and with 2 travels from EU and 2 from USA. With regards to meetings there's the ICES WGMG and the ICES ASC. For the second is not clear how to fit a4a in the conference program. Courses for us (not given by us) were not foreseen in the beginning but there may be interest in a Julia course. Depending on how things progress the workshop to implement Fishrent+F3 in FLR may be funded by a4a. 
+
+\section{KOM report}
+The report is out and expecting comments. The final report will be delivered on the next few days.
+
+\section{Data package}
+The objective is to have a datasets package in FLR to support model's development and testing. The package will have real data, simulated data and some methods to introduce variability and generate indices of abundance.
+
+\begin{itemize}
+	\item Real data - It may be interesting to add datasets from ICES WG and get a full picture of a region, like the North Sea. Some tuna datasets already exist in FLExamples. [COLIN]  
+	\item Simulated data - There are three collections that may be included.
+	\begin{itemize}
+		\item Length based data - Daniel Howell was already contacted to explore the possibility of using Gadget to simulate data. [ERNESTO]
+		\item Age data from STECF HCR EWG -These datasets were used on a set of meetings dealing with HCR for CFP in 2009. The datasets need to be updated to recent FLR versions. The code is in sf.net. [IAGO]
+		\item Age based data based on WKLIFE - This WK compiled a large number of life history parameters for EU stocks that require advise but none is given. Using the method "gislasim", based on Henrik Gislason paper and Laurie's work, and some exploitation trends, it's possible to generate datasets for all these stocks. [ERNESTO]   
+	\end{itemize}
+	\item "gen" methods - Methods to generate abundance indices from the data. One for CPUE and another for Surveys. The methods must allow standard characteristics like bias, variability and catchability changes to be introduced and must return an FLIndex object. This way there will be no need to distribute indices, users can call the method and have whatever they're looking for. Additionally, the methods that we developed for the Baltic pelagic tests, to introduce variability on FLQuants that afterwards can be used to introduce variability on the stock, may also be included on this package. [COLIN \& ERNESTO]
+\end{itemize}
+
+\section{SC@A model}
+The first candidate model to be developed will be a statistical catch-at-age with the option of turning on/off three elements (i) the growth model, (ii) the selectivity function, and (iii) the stock-recruitment function. The first will be considered a second priority and for the moment we'll focus on age data.
+In a first step development will run in parallel to:
+\begin{itemize}
+	\item Implement the forward projection with "fwd" and compare with results obtained with the present solution that uses "FLCohort". [ERNESTO]
+	\item Integrate the estimation of S/R parameters in the model. [COLIN]
+\end{itemize}
+
+Having the model implemented and datasets will allow to proceed with testing. In particular we need to test the impact of increasing complexity, by adding the above described elements, and the effect of the time series length on the results.
+
+\section{Time frame}
+If we wish to get somewhere with this we need to get results on the next 2 month !
+
+\end{document}
+
