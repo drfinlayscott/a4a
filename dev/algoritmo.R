@@ -109,29 +109,10 @@ stks <- FLStocks(sam=stck.sam, sca2=stck2.sca, sca3=stck3.sca, sca4=stck4.sca)
 # a4a9
 #-------------------------------------------------------------------------------
 
-obs <- list(catch = Data( stck @ catch.n ),
-            index = Data(tun[[3]] @ index)) # 4 has more ages .... but missing age 1s at start of series
-M <- Data( stck @ m )
 
-get_stk_funs <-
-function(pars, data_summaries)
-{
-  with(data_summaries,
-  list(
-    #S = function(a) ifelse(a < pars $ aE, 0.05 + 0.95 * (a - Cminage)/(pars $ aE - Cminage), 1),
-    #S = function(a) iglogit( 1 * glogit(a, Cminage-1e-9, Cmaxage+1e-9) + log(99) - glogit(pars $ aE, Cminage-1e-9, Cmaxage+1e-9) * 1, 0.05, 1) ,
-    S = function(a) iglogit( (exp(glogit(pars $ aE, Cminage, Cmaxage)) + .5) * 
-                             glogit(a, Cminage-1e-9, Cmaxage+1e-9) + 
-                             log(99) - glogit(Cmaxage - .5, Cminage, Cmaxage) * (exp(glogit(pars $ aE, Cminage, Cmaxage)) + .5),
-                              0.05, 1) ,
-    q = function(a) exp(pars $ logq) * exp(- pars $ lambda * a)
-  ))
-}
+#stck <- NSH
+#tun  <- NSH.tun
 
-fit3 <- SCA.fit(obs, M, trace = 50)
-
-
-
-
+#fit.a4a9 <- a4a9(stck, tun[[3]], trace = 50)
 
 

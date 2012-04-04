@@ -15,76 +15,61 @@
 #	selq = sel0*exp(-beta*t) - exponential decay
 ###############################################################################
 
+#==============================================================================
+# Generic
+#==============================================================================
+setGeneric('a4a9', function(stock, index, ...) standardGeneric('a4a9') )
+
+#==============================================================================
+# Functions
+#==============================================================================
+
+# some utility functions
+iglogit <- function(x, min = 0, max = 1) 1/(1 + exp(-x)) * (max - min) + min
+glogit <- function(p, min = 0, max = 1) {p <- (p - min) / (max - min); log(p / (1-p))}
 
 
 # the main fitting function/algorithm
-SCA.fit <-
-function(obs, M, trace = 10)
+setMethod("a4a9", c("FLStock", "FLIndex"), 
+function(stock, index, control.model, trace = 10)
 {
-  time0 <- time()
+  time0 <- proc.time()
 
-  # get starting values (improve this along the lines of EJ code)
-  par.init <- rep(0, 107)
+  # extract data from stock and index FL objects
+  obs <- list(catch = drop( catch.n(stock) @ .Data ),
+              index = drop( index(index) @ .Data ))
+
+  M <- drop( m(stock) @ .Data )
 
   # collect useful data summaries
-  data_summaries <- get_data_summaries(obs)
-
-  neg.llik(par.init, data_summaries, M, obs)
+  data_summaries <- getDataSummaries(obs)
+  
+  # CHECK CONTROL.MODEL
+  
+  # get starting values (improve this along the lines of EJ code)
+  par.init <- getIntialParams(obs, M, control.model, data_summaries)
 
   opt <- nlminb(par.init, neg.llik, 
+                control.model = control.model, 
                 data_summaries = data_summaries, M = M, obs = obs, 
-                control = list(trace = trace))
+                control = list(trace = trace, iter.max = 1e5, eval.max = 1e5))
 
-  out <- predict_pop(opt $ par[-(1:2)], data_summaries, M, full = TRUE)
+  out <- predict_pop(opt $ par, control.model, data_summaries, M, full = TRUE)
   out $ par $ sigma <- exp(opt $ par[1:2])
   out $ opt <- opt
   out $ llik <- -1 * opt $ objective
   out $ aic <- -2 * out $ llik + 2 * length(par.init)
-  out $ ellapsed <- time() - time0
+  out $ ellapsed <- proc.time() - time0
   
   out
-}
-
-
-
-# some utility functions
-Data <- function(x) drop(x @ .Data)
-
-iglogit <- function(x, min = 0, max = 1) 1/(1 + exp(-x)) * (max - min) + min
-glogit <- function(p, min = 0, max = 1) {p <- (p - min) / (max - min); log(p / (1-p))}
-
-time <- function() proc.time()
-
-# convert model parameters from vector to list 
-# and convert supports
-get_stk_pars <-
-function(par, data_summaries)
-{
-  with(data_summaries,
-  list(
-    aE     = iglogit(par[1], min = Cminage, max = Cmaxage), # fully exploited age
- 	  Fy     = exp(par[1+Cyrsidx]),
-	  Ry     = exp(par[1+Cnyrs+Cyrsidx]),
-	  lambda = exp(par[1+2*Cnyrs+1]),
-	  logq   = par[1+2*Cnyrs+2]
-  ))
-}
-
-# get the fishery and survey selection functions
-get_stk_funs <-
-function(pars, data_summaries)
-{
-  with(data_summaries,
-  list(
-    S = function(a) ifelse(a < pars $ aE, 0.05 + 0.95 * (a - Cminage)/(pars $ aE - Cminage), 1),
-    q = function(a) exp(pars $ logq - pars $ lambda * a)
-  ))
-}
+})
 
 # calculate useful data summaries
-get_data_summaries <-
+getDataSummaries <-
 function(obs)
 {
+  ## code runs at ~4,600 per sec
+  # but its only called once
   out <-
   with(obs,
   list(
@@ -109,31 +94,71 @@ function(obs)
   })
 }
 
-# Predict population
-predict_pop <-
-function(par, data_summaries, M, full = FALSE)
+# good starting values... (NOT YET!)
+getInitialParams <-
+function(obs, M, control.model, data_summaries)
 {
-  stk_pars <- get_stk_pars(par, data_summaries)
-  stk_funs <- get_stk_funs(stk_pars, data_summaries)
+  ## code runs at ~40,000 per sec (because it doen't do anything yet!!)
+  npars <- 2*data_summaries $ Cnyrs + 5
+  if (control.model $ recruitment != "none") npars <- npars + 3
+  
+  # now do something clever
+  with(data_summaries, rep(0, npars))
+}
 
-  S <- stk_funs $ S(data_summaries $ Cages)
-  F <- S %*% t(stk_pars $ Fy)
-  qa <- stk_funs $ q(data_summaries $ Iages)
+
+# the negative log likelihood
+neg.llik <-
+function(par, control.model, data_summaries, M, obs)
+{
+
+  pred <- predict_pop(par, control.model, data_summaries, M)
+  
+  # add smallest observed catch for zero catch
+  obs $ catch[obs $ catch == 0] <- min(obs $ catch[obs $ catch > 0], na.rm = TRUE)
+  
+  llik.catch <- sum(dnorm(log(obs $ catch),  log(pred $ catch), exp(par[1]), log = TRUE), na.rm = TRUE)
+  llik.index <- sum(dnorm(log(obs $ index),  log(pred $ index), exp(par[2]), log = TRUE), na.rm = TRUE)
+   
+  -1 * (llik.catch + llik.index)
+}
+
+
+# Predict population -- CONVERT TO USE Forward... 
+#                       ONLY REQUIRED IF Recruit model is deterministic
+predict_pop <-
+function(par, control.model, data_summaries, M, full = FALSE)
+{
+  model_par <- getModelParams(par, control.model, data_summaries)
+  
+  Sfun <- getSelModel(control.model $ fishery.selectivity)
+  qfun <- getSelModel(control.model $ survey.selectivity)
+  Rfun <- getRecModel(control.model $ recruitment)
+  
+  # survey selectivity
+  qa <- exp(model_par $ logq) * qfun(data_summaries $ Iages, model_par $ lambda, data_summaries)
   q <- qa %*% t(rep(1, data_summaries $ Inyrs))
-  Z <- F + M
 
+  # F and Z
+  S <- Sfun(data_summaries $ Cages, model_par $ aE, data_summaries)
+  F <- S %*% t(model_par $ Fy)
+  Z <- F + M
+  
   # cohortify Z
   Zc <- 
-    do.call(rbind, 
-      lapply(1:nrow(Z), 
-        function(i, nr) c(rep(NA,nr-i), Z[i,], rep(NA,i-1)), 
-        nr = nrow(Z)))
-  Zc <- Zc[,-(1:(nrow(Z) - 1))]      
+    with(data_summaries,
+      do.call(rbind, 
+        lapply(1:Cnages, 
+               function(i, nr) c(rep(NA,nr-i), Z[i,], rep(NA,i-1)), 
+               nr = Cnages)))
+  Zc <- Zc[,-(1:(data_summaries $ Cnages - 1))]      
 
   # fill out N with recruits
-  Nc <- matrix(stk_pars $ Ry, nrow(Zc), ncol(Zc), byrow = TRUE)      
+  Nc <- matrix(model_par $ Ry, data_summaries $ Cnages, data_summaries $ Cnyrs, byrow = TRUE)      
   # do cumulative Zs down cohorts
-  Zc.cum <- apply(Zc, 2, function(x) c(0, cumsum(x[-length(x)])))
+  Zc.cum <- rbind(0, Zc[-nrow(Zc),])
+  for (i in 3:data_summaries $ Cnages) Zc.cum[i,] <- Zc.cum[i-1,] + Zc.cum[i,]
+  
   # generate population
   Nc <- Nc * exp(-Zc.cum)
 
@@ -151,27 +176,126 @@ function(par, data_summaries, M, full = FALSE)
   if (full)
     list(catch = catch, index = index, 
          N = N, F = F, S = S, qa = qa, 
-         funs = stk_funs, par = stk_pars)
+         Sfun = Sfun, qfun = qfun, Rfun = Rfun, 
+         par = model_par)
   else
     list(catch = catch, index = index)
 }
 
 
-# the negative log likelihood
-neg.llik <-
-function(par, data_summaries, M, obs)
+# convert model parameters from vector to list 
+# and convert supports
+getModelParams <-
+function(par, control.model, data_summaries)
 {
-
-  pred <- predict_pop(par[-(1:2)], data_summaries, M)
-  
-  # add smallest observed catch for zero catch
-  obs $ catch[obs $ catch == 0] <- min(obs $ catch[obs $ catch > 0], na.rm = TRUE)
-  
-  llik.catch <- sum(dnorm(log(obs $ catch),  log(pred $ catch), exp(par[1]), log = TRUE), na.rm = TRUE)
-  llik.index <- sum(dnorm(log(obs $ index),  log(pred $ index), exp(par[2]), log = TRUE), na.rm = TRUE)
+  ## code runs at ~8,000 per sec
+  with(data_summaries,
+  {
+    nsig <- 2
+    out <-
+    list(
+      Fy     = exp(par[nsig + Cyrsidx]), 
+	    Ry     = exp(par[nsig + Cnyrs+Cyrsidx]),
+      logq   = par[nsig + 2*Cnyrs+1])
+      
+    # fishery selection model  
+    out $ aE <- 
+      getSelModelParams( par[nsig + 2*Cnyrs+2], 
+                         control.model $ fishery.selectivity, 
+                         data_summaries)
    
-  -1 * (llik.catch + llik.index)
+    # survey selection model      
+    out $ lambda <- 
+      getSelModelParams( par[nsig + 2*Cnyrs+3], 
+                         control.model $ survey.selectivity,
+                         data_summaries)
+    
+    # recruitment model (can be 'none')          
+    out $ recruits <-
+      getRecModelParams( par[nsig + 2*Cnyrs+4:5], 
+                         control.model $ recruitment,
+                         data_summaries)
+                           
+    out
+  })
 }
 
+# convert params from real line to the desired domain
+getSelModelParams <-
+function(par, model, data_summaries)
+{
+  ## code runs at ~50,000 per sec 
+  with(data_summaries,
+    switch(model,
+      linear = iglogit(par, min = Cminage, max = Cmaxage),
+      # for the logit models theta is the age at 99% selection
+      # so it makes no sense for theta to be able to reach 9
+      logit1 = iglogit(par, min = Cminage, max = Cmaxage - 1e-9), 
+      logit2 = iglogit(par, min = Cminage, max = Cmaxage - 1e-9),
+      exponential = exp(par),
+      stop("this shouldn't happen")
+    ))
+}    
 
+      
+# get a 1 parameter selection function
+getSelModel <-
+function(model)
+{
+  ## code runs at ~1000,000 per sec
+  switch(model,
+    linear = 
+      function(a, theta, data_summaries) 
+        with(data_summaries, 
+          ifelse(a < theta, 0.05 + 0.95 * (a - Cminage)/(theta - Cminage), 1)),
+    # for the logit models theta is the age at 99% selection
+    # so it makes no sense for theta to be able to reach 9
+    logit1 = 
+      function(a, theta, data_summaries) 
+        with(data_summaries,
+          iglogit( glogit(a, Cminage, Cmaxage) + 
+                     log(99) - glogit(theta, Cminage, Cmaxage), 
+                   0.05, 1)),
+    logit2 = 
+      function(a, theta, data_summaries) 
+        with(data_summaries, 
+          iglogit( (exp(glogit(theta, Cminage, Cmaxage)) + .5) * 
+                     glogit(a, Cminage, Cmaxage) + log(99) - 
+                     glogit(Cmaxage - .5, Cminage, Cmaxage) * 
+                     (exp(glogit(theta, Cminage, Cmaxage)) + .5),
+                   0.05, 1)),
+    exponential = 
+      function(a, theta, data_summaries)
+        exp(-theta * a),
+    stop("this shouldn't happen")
+  )      
+}
+
+# convert params from real line to the desired domain
+getRecModelParams <-
+function(par, model, data_summaries)
+{
+  ## code runs at ~XX per sec 
+  with(data_summaries,
+    switch(model,
+      none = numeric(0),
+      ricker = par,
+      stop("this shouldn't happen")
+    ))
+}    
+
+      
+# get a 2 parameter recruitment function ...
+getRecModel <-
+function(model)
+{
+  ## code runs at ~1000,000 per sec
+  switch(model,
+    none = NULL, 
+    ricker = 
+      function(ssb, theta, data_summaries)
+        rep( theta[1], length(ssb)), # constant recruitment
+    stop("this shouldn't happen")
+  )      
+}
 
