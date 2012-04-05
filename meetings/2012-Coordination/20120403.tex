@@ -9,12 +9,12 @@
 \author{Ernesto Jardim}
 \maketitle
 \section{Introduction}
-A number of issues required our attention and some planning. We need to progress or we may lose the momentum and end up not delivering anything except a bunch of ideas.
+A number of issues required our attention and some planning. We need to make progress or we may lose the momentum and end up not delivering anything except a bunch of ideas.
 
 The meeting was attended by Chato, Colin, Iago and Ernesto.
 
 \section{2012 Plan}
-The activities for 2012 are categorized in Invitations, Meetings, Courses, and Contracts. Regarding invitations we have already invited Henrik Gislason (DTU) and Richard Hillary (CSIRO). There's contacts with Steve Cadrin and Sidney Holt. There's another 2 invitations that may realize. In summary we may have 4 invitations, taken around 10 days and with 2 travels from EU and 2 from USA. With regards to meetings there's the ICES WGMG and the ICES ASC. For the second is not clear how to fit a4a in the conference program. Courses for us (not given by us) were not foreseen in the beginning but there may be interest in a Julia course. Depending on how things progress the workshop to implement Fishrent+F3 in FLR may be funded by a4a. At last, the contracts foreseen may not be needed for now. 
+The activities for 2012 are categorized in Invitations, Meetings, Courses, and Contracts. Regarding invitations we have already invited Henrik Gislason (DTU) and Richard Hillary (CSIRO). There's contacts with Steve Cadrin and Sidney Holt. There's another 2 invitations that may come forward. In summary we may have 4 more invitations, taken around 10 days and with 2 travels from EU and 2 from USA. With regards to meetings there's the ICES WGMG and the ICES ASC. For the second it's not clear how to fit a4a in the conference program. Courses for us (not given by us) were not foreseen in the beginning but there may be interest in a Julia course. A contract to implement the stock assessment model in ADMB may be neccessary, as foreseen in the start of the initiative, which may require Colin to meet the developer for training.  
 
 \section{KOM report}
 The report is out and expecting comments. The final report will be delivered on the next few days.
@@ -28,7 +28,7 @@ The objective is to have a datasets package in FLR to support model's developmen
 	\begin{itemize}
 		\item Length based data - Daniel Howell was already contacted to explore the possibility of using Gadget to simulate data. [ERNESTO]
 		\item Age data from STECF HCR EWG - These datasets were used on a set of meetings dealing with HCR for CFP in 2009. The datasets need to be updated to recent FLR versions. The code is in sf.net. [IAGO]
-		\item Age based data based on WKLIFE - This WK compiled a large number of life history parameters for EU stocks. Using the method "gislasim", based on Henrik Gislason paper and Laurie's work, and some exploitation trends, it's possible to generate datasets for all these stocks. [ERNESTO]   
+		\item Age based data based on WKLIFE - The WK compiled a large number of life history parameters for EU stocks. Using the method "gislasim", based on Henrik Gislason paper and Laurie's work, and some exploitation trends, it's possible to generate datasets for all these stocks. [ERNESTO \& CHATO]   
 	\end{itemize}
 	\item "gen" methods - Methods to generate abundance indices from the data, both CPUE and Survey based. The methods must return an FLIndex object and allow standard characteristics like bias, variability and catchability changes to be introduced. This way there will be no need to distribute indices, users can call the method and have whatever they're looking for. Additionally, the methods that we developed for the Baltic pelagic tests may also be included on this package. These methods introduce variability on FLQuants that afterwards can be used to introduce variability on the stock. [COLIN \& ERNESTO]
 \end{itemize}
